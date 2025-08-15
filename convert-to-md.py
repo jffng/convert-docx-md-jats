@@ -231,7 +231,10 @@ def parse_figures_for_jats(content: str) -> str:
     # Pattern to match figure blocks in JATS XML:
     # 1. A paragraph with <bold>Figure X</bold> (the label)
     # 2. A paragraph with inline-graphic element and caption text
-    figure_pattern = r'(<p[^>]*>\s*<bold[^>]*>Figure\s+\d+</bold>\s*</p>)\s*(<p[^>]*>\s*<inline-graphic[^>]*>.*?</inline-graphic>([^<]*)</p>)'
+    # This handles both structures:
+    # - <p><bold>Figure X</bold></p><p><inline-graphic>...</inline-graphic>caption</p>
+    # - <p><bold>Figure X</bold></p><p><inline-graphic>...</inline-graphic>caption text</p>
+    figure_pattern = r'(<p[^>]*>\s*<bold[^>]*>Figure\s+\d+</bold>\s*</p>)\s*(<p[^>]*>\s*<inline-graphic[^>]*>.*?</inline-graphic>(.*?)</p>)'
     
     def replace_figure(match):
         label_para = match.group(1)
