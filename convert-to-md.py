@@ -179,6 +179,38 @@ def remove_image_dimensions(content: str) -> str:
     return content
 
 
+def process_image_links_to_basename(content: str) -> str:
+    """
+    Process image links in markdown to use only the basename (filename without path).
+    
+    This converts image references like ![alt](media/image1.png) to ![alt](image1.png)
+    for OJS compatibility where file paths are handled directly.
+    
+    Args:
+        content: The markdown content to process
+        
+    Returns:
+        The content with image links converted to basename only
+    """
+    # Pattern to match markdown image links: ![alt text](path/to/image.ext)
+    # This captures the alt text and the full path, then extracts just the basename
+    image_pattern = r'!\[([^\]]*)\]\(([^)]+)\)'
+    
+    def replace_image_link(match):
+        alt_text = match.group(1)
+        image_path = match.group(2)
+        
+        # Extract just the basename (filename with extension)
+        basename = os.path.basename(image_path)
+        
+        return f'![{alt_text}]({basename})'
+    
+    # Apply the image link processing
+    content = re.sub(image_pattern, replace_image_link, content)
+    
+    return content
+
+
 def parse_figures_for_jats(content: str) -> str:
     """
     Parse figure patterns from JATS XML content and convert them to proper JATS XML figure elements.
@@ -359,6 +391,13 @@ def convert_docx_to_markdown(input_file: str, output_file: str) -> bool:
         print(f"Error: Input file '{input_file}' not found.")
         return False
     
+    # Get the output directory for media extraction
+    output_dir = os.path.dirname(output_file) or '.'
+    media_dir = os.path.join(output_dir, 'media')
+    
+    # Create a temporary directory for extraction to avoid nested media/media structure
+    temp_extract_dir = os.path.join(output_dir, 'temp_extract')
+    
     # Build pandoc command
     cmd = ['pandoc', input_file, '-o', output_file]
     
@@ -370,11 +409,30 @@ def convert_docx_to_markdown(input_file: str, output_file: str) -> bool:
         '--wrap=none',  # Don't wrap lines
         '--markdown-headings=atx',  # Use # style headings
         '--reference-location=document',  # Put references at end
+        '--extract-media=' + temp_extract_dir,  # Extract media to temporary directory
     ])
     
     try:
         print(f"Converting '{input_file}' to '{output_file}'...")
         result = subprocess.run(cmd, capture_output=True, text=True, check=True)
+        
+        # Move extracted media files from temp directory to final media directory
+        if os.path.exists(temp_extract_dir):
+            # Create the final media directory if it doesn't exist
+            os.makedirs(media_dir, exist_ok=True)
+            
+            # Move files from temp_extract_dir/media/ to media_dir/
+            temp_media_dir = os.path.join(temp_extract_dir, 'media')
+            if os.path.exists(temp_media_dir):
+                import shutil
+                for file in os.listdir(temp_media_dir):
+                    src = os.path.join(temp_media_dir, file)
+                    dst = os.path.join(media_dir, file)
+                    shutil.move(src, dst)
+                
+                # Remove the temporary extraction directory
+                shutil.rmtree(temp_extract_dir)
+                print(f"✓ Extracted media files to '{media_dir}'")
         
         # Post-process the output
         if os.path.exists(output_file):
@@ -393,6 +451,9 @@ def convert_docx_to_markdown(input_file: str, output_file: str) -> bool:
 
             # Remove image dimensions
             content = remove_image_dimensions(content)
+            
+            # Process image links to use basename only (for OJS compatibility)
+            content = process_image_links_to_basename(content)
             
             # Write the processed content back
             with open(output_file, 'w', encoding='utf-8') as f:
