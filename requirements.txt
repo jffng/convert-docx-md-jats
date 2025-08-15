@@ -1,0 +1,16 @@
+# Requirements for DOCX to Markdown Converter
+# 
+# This script requires pandoc to be installed on your system.
+# Python dependencies are minimal and use only standard library modules.
+
+# No additional Python packages required - uses only standard library:
+# - argparse
+# - os
+# - sys
+# - subprocess
+# - glob
+# - pathlib
+# - typing
+
+# External dependency:
+# pandoc >= 2.0 (install from https://pandoc.org/installing.html)
