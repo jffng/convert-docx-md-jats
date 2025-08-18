@@ -18,19 +18,19 @@ sudo apt install -y python3 python3-pip python3-venv nginx pandoc
 
 # Create application directory
 echo "📁 Setting up application directory..."
-sudo mkdir -p /var/www/converter-app
+sudo mkdir -p /var/www/html/converter-app
 sudo mkdir -p /var/log/converter-app
-sudo chown www-data:www-data /var/www/converter-app
+sudo chown www-data:www-data /var/www/html/converter-app
 sudo chown www-data:www-data /var/log/converter-app
 
 # Copy application files (assuming this script is run from the app directory)
 echo "📋 Copying application files..."
-sudo cp -r . /var/www/converter-app/
-sudo chown -R www-data:www-data /var/www/converter-app
+sudo cp -r . /var/www/html/converter-app/
+sudo chown -R www-data:www-data /var/www/html/converter-app
 
 # Set up Python virtual environment
 echo "🐍 Setting up Python virtual environment..."
-cd /var/www/converter-app
+cd /var/www/html/converter-app
 sudo -u www-data python3 -m venv venv
 sudo -u www-data ./venv/bin/pip install --upgrade pip
 sudo -u www-data ./venv/bin/pip install -r requirements-production.txt
