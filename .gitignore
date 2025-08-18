@@ -5,3 +5,5 @@ test/media
 .DS_Store
 test/.DS_Store
 converter.log
+.env
+config.local.py
