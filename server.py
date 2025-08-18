@@ -3,8 +3,12 @@ import tempfile
 import subprocess
 from pathlib import Path
 from flask import Flask, request, send_file, render_template_string
+from werkzeug.middleware.proxy_fix import ProxyFix
 
 app = Flask(__name__)
+
+# Configure Flask for proxy subpath
+app.wsgi_app = ProxyFix(app.wsgi_app, x_prefix=1, x_host=1, x_proto=1)
 
 def _run_conversion(cmd):
     """Helper function to run conversion commands."""
@@ -36,7 +40,7 @@ HTML_TEMPLATE = """
     <h1>DOCX to JATS XML Converter</h1>
     <p>Upload a DOCX file to convert to Markdown, or a Markdown file to convert to JATS XML.</p>
     
-    <form action="/convert" method="post" enctype="multipart/form-data">
+    <form action="{{ url_for('convert') }}" method="post" enctype="multipart/form-data">
         <div class="form-group">
             <label for="document">Select Document:</label>
             <input type="file" id="document" name="document" accept=".docx,.md" required onchange="updateConversionOptions()">
