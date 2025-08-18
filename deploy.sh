@@ -14,7 +14,26 @@ sudo apt upgrade -y
 
 # Install required packages
 echo "📦 Installing required packages..."
-sudo apt install -y python3 python3-pip python3-venv apache2 pandoc
+sudo apt install -y python3 python3-pip python3-venv apache2 curl
+
+# Install latest pandoc
+echo "📦 Installing latest pandoc..."
+PANDOC_VERSION="3.7.0.2"
+PANDOC_ARCH="amd64"
+PANDOC_URL="https://github.com/jgm/pandoc/releases/download/${PANDOC_VERSION}/pandoc-${PANDOC_VERSION}-linux-${PANDOC_ARCH}.tar.gz"
+
+# Download and install pandoc
+cd /tmp
+curl -L -O "$PANDOC_URL"
+tar -xzf "pandoc-${PANDOC_VERSION}-linux-${PANDOC_ARCH}.tar.gz"
+sudo cp "pandoc-${PANDOC_VERSION}/bin/pandoc" /usr/local/bin/
+sudo chmod +x /usr/local/bin/pandoc
+
+# Clean up
+rm -rf "pandoc-${PANDOC_VERSION}" "pandoc-${PANDOC_VERSION}-linux-${PANDOC_ARCH}.tar.gz"
+
+# Verify installation
+echo "✅ Pandoc version: $(pandoc --version | head -1)"
 
 # Create application directory
 echo "📁 Setting up application directory..."
