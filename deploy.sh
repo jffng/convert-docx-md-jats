@@ -47,6 +47,26 @@ echo "📋 Copying application files..."
 sudo cp -r . /var/www/html/converter-app/
 sudo chown -R www-data:www-data /var/www/html/converter-app
 
+# Verify critical files and directories
+echo "🔍 Verifying application files..."
+if [ ! -f "/var/www/html/converter-app/server.py" ]; then
+    echo "❌ server.py not found!"
+    exit 1
+fi
+if [ ! -f "/var/www/html/converter-app/config.py" ]; then
+    echo "❌ config.py not found!"
+    exit 1
+fi
+if [ ! -d "/var/www/html/converter-app/templates" ]; then
+    echo "❌ templates directory not found!"
+    exit 1
+fi
+if [ ! -f "/var/www/html/converter-app/templates/index.html" ]; then
+    echo "❌ templates/index.html not found!"
+    exit 1
+fi
+echo "✅ All critical files verified"
+
 # Set up Python virtual environment
 echo "🐍 Setting up Python virtual environment..."
 cd /var/www/html/converter-app
@@ -99,6 +119,17 @@ echo ""
 echo "📝 For HTTPS, also add:"
 echo "   RewriteEngine On"
 echo "   RewriteRule ^/docx-converter$ /docx-converter/ [R=301,L]"
+
+# Set production environment
+echo "🔧 Setting production environment..."
+export FLASK_ENV=production
+export ENVIRONMENT=production
+
+# Test environment configuration
+echo "🧪 Testing environment configuration..."
+cd /var/www/html/converter-app
+source venv/bin/activate
+python -c "from config import Config; print('✅ Environment:', 'PRODUCTION' if Config.is_production() else 'DEVELOPMENT'); print('✅ Form action:', Config.get_form_action()); print('✅ Log file:', Config.get_log_file())"
 
 # Start the application
 echo "🚀 Starting the application..."

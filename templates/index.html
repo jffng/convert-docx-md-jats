@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOCX to JATS Converter</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input[type="file"], select { width: 100%; padding: 8px; margin-bottom: 10px; }
+        button { background: #007cba; color: white; padding: 10px 20px; border: none; cursor: pointer; }
+        button:hover { background: #005a87; }
+        .result { margin-top: 20px; padding: 15px; background: #f0f0f0; border-radius: 5px; }
+        .error { background: #ffebee; color: #c62828; }
+        .success { background: #e8f5e8; color: #2e7d32; }
+    </style>
+</head>
+<body>
+    <h1>DOCX to JATS XML Converter</h1>
+    <p>Upload a DOCX file to convert to Markdown, or a Markdown file to convert to JATS XML.</p>
+    
+    <form action="{{ form_action }}" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="document">Select Document:</label>
+            <input type="file" id="document" name="document" accept=".docx,.md" required onchange="updateConversionOptions()">
+        </div>
+        
+        <div class="form-group" id="conversion-options" style="display: none;">
+            <label for="convert-to-jats">
+                <input type="checkbox" id="convert-to-jats" name="convert-to-jats">
+                Convert to JATS XML (for DOCX files only)
+            </label>
+            <p id="conversion-info" style="font-size: 0.9em; color: #666; margin-top: 5px;"></p>
+        </div>
+        
+        <button type="submit">Convert Document</button>
+    </form>
+    
+    <script>
+    function updateConversionOptions() {
+        const fileInput = document.getElementById('document');
+        const conversionOptions = document.getElementById('conversion-options');
+        const convertToJats = document.getElementById('convert-to-jats');
+        const conversionInfo = document.getElementById('conversion-info');
+        
+        if (fileInput.files.length > 0) {
+            const fileName = fileInput.files[0].name.toLowerCase();
+            
+            if (fileName.endsWith('.docx')) {
+                conversionOptions.style.display = 'block';
+                convertToJats.disabled = false;
+                conversionInfo.textContent = 'DOCX will be converted to Markdown. Check the box to also convert to JATS XML.';
+            } else if (fileName.endsWith('.md')) {
+                conversionOptions.style.display = 'block';
+                convertToJats.disabled = true;
+                convertToJats.checked = true;
+                conversionInfo.textContent = 'Markdown will be converted to JATS XML.';
+            } else {
+                conversionOptions.style.display = 'none';
+            }
+        } else {
+            conversionOptions.style.display = 'none';
+        }
+    }
+    </script>
+    
+    {% if message %}
+    <div class="result {% if error %}error{% else %}success{% endif %}">
+        {{ message }}
+    </div>
+    {% endif %}
+</body>
+</html>
