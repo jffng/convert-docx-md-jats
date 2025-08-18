@@ -14,7 +14,7 @@ sudo apt upgrade -y
 
 # Install required packages
 echo "📦 Installing required packages..."
-sudo apt install -y python3 python3-pip python3-venv nginx pandoc
+sudo apt install -y python3 python3-pip python3-venv apache2 pandoc
 
 # Create application directory
 echo "📁 Setting up application directory..."
@@ -41,43 +41,45 @@ sudo cp converter-app.service /etc/systemd/system/
 sudo systemctl daemon-reload
 sudo systemctl enable converter-app
 
-# Create nginx configuration
-echo "🌐 Setting up nginx configuration..."
-sudo tee /etc/nginx/sites-available/converter-app << EOF
-server {
-    listen 80;
-    server_name your-domain.com;  # Replace with your domain
+# Enable Apache proxy modules
+echo "🌐 Setting up Apache proxy modules..."
+sudo a2enmod proxy
+sudo a2enmod proxy_http
+sudo a2enmod headers
+sudo a2enmod rewrite
 
-    # OJS configuration (adjust path as needed)
-    location / {
-        proxy_pass http://localhost:8080;  # Adjust OJS port
-        proxy_set_header Host \$host;
-        proxy_set_header X-Real-IP \$remote_addr;
-        proxy_set_header X-Forwarded-For \$proxy_add_x_forwarded_for;
-        proxy_set_header X-Forwarded-Proto \$scheme;
-    }
+# Create Apache configuration snippet
+echo "🌐 Creating Apache configuration snippet..."
+sudo tee /etc/apache2/conf-available/converter-app-proxy.conf << EOF
+# Converter app proxy configuration for Apache
+# Add these lines to your existing VirtualHost configuration
 
-    # Converter app configuration
-    location /converter/ {
-        proxy_pass http://localhost:5001/;
-        proxy_set_header Host \$host;
-        proxy_set_header X-Real-IP \$remote_addr;
-        proxy_set_header X-Forwarded-For \$proxy_add_x_forwarded_for;
-        proxy_set_header X-Forwarded-Proto \$scheme;
-        
-        # File upload limits
-        client_max_body_size 50M;
-        proxy_read_timeout 300s;
-        proxy_connect_timeout 300s;
-        proxy_send_timeout 300s;
-    }
-}
+# For HTTP VirtualHost (port 80)
+ProxyPreserveHost On
+ProxyPass /docx-converter/ http://localhost:5001/
+ProxyPassReverse /docx-converter/ http://localhost:5001/
+
+# For HTTPS VirtualHost (port 443) - add these lines to your SSL VirtualHost
+# RewriteEngine On
+# RewriteRule ^/docx-converter$ /docx-converter/ [R=301,L]
+# ProxyPreserveHost On
+# ProxyPass /docx-converter/ http://localhost:5001/
+# ProxyPassReverse /docx-converter/ http://localhost:5001/
 EOF
 
-# Enable nginx site
-sudo ln -sf /etc/nginx/sites-available/converter-app /etc/nginx/sites-enabled/
-sudo nginx -t
-sudo systemctl reload nginx
+echo "📝 Apache configuration snippet created at: /etc/apache2/conf-available/converter-app-proxy.conf"
+echo "📝 You need to manually add the proxy configuration to your existing VirtualHost files:"
+echo "   - HTTP: /etc/apache2/sites-available/romchip.org.conf"
+echo "   - HTTPS: /etc/apache2/sites-available/romchip.org-ssl.conf"
+echo ""
+echo "📝 Add these lines to your VirtualHost configurations:"
+echo "   ProxyPreserveHost On"
+echo "   ProxyPass /docx-converter/ http://localhost:5001/"
+echo "   ProxyPassReverse /docx-converter/ http://localhost:5001/"
+echo ""
+echo "📝 For HTTPS, also add:"
+echo "   RewriteEngine On"
+echo "   RewriteRule ^/docx-converter$ /docx-converter/ [R=301,L]"
 
 # Start the application
 echo "🚀 Starting the application..."
@@ -88,7 +90,7 @@ echo "📊 Checking application status..."
 sudo systemctl status converter-app --no-pager
 
 echo "✅ Deployment complete!"
-echo "🌐 Converter app available at: http://your-domain.com/converter/"
+echo "🌐 Converter app available at: https://romchip.org/docx-converter/"
 echo "📝 Logs available at: /var/log/converter-app/"
 echo ""
 echo "🔧 Useful commands:"
@@ -96,3 +98,6 @@ echo "  sudo systemctl status converter-app"
 echo "  sudo systemctl restart converter-app"
 echo "  sudo journalctl -u converter-app -f"
 echo "  sudo tail -f /var/log/converter-app/error.log"
+echo ""
+echo "⚠️  IMPORTANT: You still need to manually add the proxy configuration to your Apache VirtualHost files!"
+echo "   See the configuration snippet at: /etc/apache2/conf-available/converter-app-proxy.conf"
