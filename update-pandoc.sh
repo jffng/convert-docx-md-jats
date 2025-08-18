@@ -42,5 +42,10 @@ echo "✅ New pandoc version:"
 pandoc --version | head -1
 
 echo "🎉 Pandoc update complete!"
-echo "📝 You can now restart your converter app:"
-echo "   sudo systemctl restart converter-app"
+echo "🔄 Restarting converter app..."
+sudo systemctl restart converter-app
+
+echo "📊 Checking app status..."
+sudo systemctl status converter-app --no-pager
+
+echo "✅ Update complete! Your converter app should now work with the latest pandoc."

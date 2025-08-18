@@ -12,8 +12,9 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # Create file handler which logs even debug messages
+# Replace your file handler configuration with:
 file_handler = RotatingFileHandler(
-    'converter.log',
+    '/var/log/converter-app/converter.log',
     maxBytes=1024*1024,
     backupCount=10
 )
