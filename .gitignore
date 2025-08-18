@@ -1,0 +1,6 @@
+test/~$test.docx
+venv
+build
+test/media
+.DS_Store
+test/.DS_Store
