@@ -1,0 +1,2416 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.2 20190208//EN"
+                  "JATS-archivearticle1.dtd">
+<article
+	xmlns:mml="http://www.w3.org/1998/Math/MathML"
+	xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.2" article-type="other">
+    <front id="front-1">
+    <article-meta id="article-meta-1">
+      <title-group id="title-group-1">
+        <article-title id="article-title-1">
+          <bold id="bold-1">Wright Article</bold>
+        </article-title>
+      </title-group>
+      <history id="history-1" />
+      <abstract id="abstract-1">
+        <p id="p-1" />
+      </abstract>
+    </article-meta>
+	</front>
+	<body>
+  <sec>
+    <title>Wright article</title>
+		<p>In Obsidian Entertainment’s 
+			<italic>Pentiment</italic> (2022), the
+player takes on the role of artist Andreas Maler. Andreas (and therefore
+the player) begins the game working on his masterpiece, anxious for
+success, while simultaneously working in the scriptorium of Kiersau
+Abbey on the outskirts of the fictional sixteenth-century Bavarian town
+of Tassing. Andreas soon becomes embroiled in a series of murders that
+players must work to solve, their potential lines of investigation
+influenced by decisions they make about the protagonist’s experience,
+European wanderings, and educational background.
+
+			<italic>Pentiment</italic> therefore highlights the role of player
+choice and divergent (though still limited) narrative outcomes. To this
+end, the game’s launch trailer promotes the game with lines such as
+“mysteries … only you can solve,” “choices … only you can make,” and “a
+story … only you can uncover”
+(fig. 1).
+			<xref ref-type="fn" rid="fn1">1</xref>
+		</p>
+		<fig>
+			<caption>
+				<p>
+					<bold>You would put the caption here</bold>
+				</p>
+			</caption>
+			<graphic mimetype="image" mime-subtype="png" xlink:href="Fig1.png" />
+		</fig>
+		<p>But as the narrative unfolds, it becomes apparent that players are
+really investigating the mysterious true origins of Tassing and
+Kiersau—and the stakes in telling the town’s (hi)story. Both characters
+and the player in 
+			<italic>Pentiment</italic> interpret, remember, and
+represent the past, for numerous (often personal) reasons. But these
+reinterpretations and representations coexist and compete with other
+interpretations, claims, and negotiations of the past in the present,
+creating, as one review put it, “layers of
+history.”
+			<xref ref-type="fn" rid="fn2">2</xref> The game’s very title
+reflects that this is its central preoccupation: a pentimento, from the
+Italian 
+			<italic>pentirsi</italic>, “means to repent or change your
+mind.” Thus, as an artistic technique, it “is a change made by the
+artist during the process of painting … usually hidden beneath a
+subsequent paint layer.”
+			<xref ref-type="fn" rid="fn3">3</xref>
+		</p>
+		<p>As a contemporary historical game made by a known developer (and
+backed by Microsoft), 
+			<italic>Pentiment</italic> is remarkable because
+of its deliberate reflexivity on the nature of history as a process and
+practice and of the writing of history as layers built up over time by
+different people with competing perspectives and motivations. The game
+appears to be an attempt by developers to embody a deconstructionist
+approach to historical engagement, and to do so in a more thoughtful way
+than many other mainstream historical games. As defined by Alun Munslow,
+such an approach is considered more critical and reflective than
+outmoded and conservative reconstructionist approaches which claim to
+represent the past so-called objectively because deconstructionism is
+“characterised by its concern with pointing to the subjective nature of
+historical representation itself.” As Adam Chapman further expands,
+“few, if any, historical games” seem to have been made with a
+deconstructionist approach in mind, for reasons related to both the
+medium itself and individual games’ commercial
+viability.
+			<xref ref-type="fn" rid="fn4">4</xref> As a result,
+
+			<italic>Pentiment</italic> has already drawn historians’
+attention.
+			<xref ref-type="fn" rid="fn5">5</xref>
+		</p>
+		<p>Even before the game’s release, promotional and critical discourse
+around 
+			<italic>Pentiment</italic> sought to engage potential players in
+the construction (and value) of the game’s historical representation and
+its complexities. Marketing emphasized, and reviewer discourse
+reinforced, that the game makes the player feel part of history. As
+articulated by both the development team and subsequently reviewers,
+history was not characterized as something static, much as it is
+understood by those who study the past professionally. History is not a
+fixed outcome of a stable past that is still possible to know or locate.
+History, and historical discourse, is always layered and complex,
+competing and shifting—grappled with and used for a variety of different
+purposes by different people at different
+times.
+			<xref ref-type="fn" rid="fn6">6</xref> Such an approach strongly
+reflects broader understandings of historical practice and writing as an
+interpretation always already composed from the vantage point of the
+present and based on individual choices of interpretation and
+selection—discussed as part of the philosophy of history as far back as
+the work of E. H. Carr.
+			<xref ref-type="fn" rid="fn7">7</xref>
+		</p>
+		<p>That said, and despite the importance of this complexity to the
+game’s identity and critical reception, much of this promotional and
+review discourse also sought to make a claim for the authenticity of the
+game’s representation of the early modern world—that Obsidian had
+created a game that remained faithful to historical source material. The
+notion of authenticity hangs like a specter above the marketing of many
+historical games.
+			<xref ref-type="fn" rid="fn8">8</xref> It is an
+important but equally amorphous concept for historical game reception,
+with little stable consensus on how the term is perceived and applied by
+different stakeholders, and it is often used interchangeably with other
+terms that lack shared meaning (such as 
+			<italic>accuracy</italic> or
+
+			<italic>realism</italic>).
+			<xref ref-type="fn" rid="fn9">9</xref> The
+term’s slipperiness and subjectivity results in the need to understand
+authenticity not as an inherent property of a game but as a claim made
+on behalf of it by someone (developer, marketer, reviewer, player, etc.)
+that might be received positively or negatively—an active process
+Richard A. Peterson refers to as “authenticity
+work.”
+			<xref ref-type="fn" rid="fn10">10</xref>
+		</p>
+		<p>Some explicit declarations of authenticity surrounded the discourse
+on 
+			<italic>Pentiment</italic>. For example, one review’s subtitle
+indicated that “despite a few blemishes, Pentiment delivers an
+authentic, realistic portrayal of 16th-century Bavarian life with a
+gorgeous art style,” elsewhere also remarking that its “academic
+appreciation for historical authenticity through its dialogue and art
+style is impressive and
+original.”
+			<xref ref-type="fn" rid="fn11">11</xref> Yet even when they
+did not use the term directly, developer-generated promotional materials
+and subsequent reviews and other forms of commentary can still be
+understood as attempts to construct, or weigh up, the game’s
+authenticity. This article discusses the way that developers, marketers,
+and reviewers alike sought to construct a discourse of authenticity
+around 
+			<italic>Pentiment</italic> before and after its release, and how
+they did so by layering different historical discourses onto
+foundational explanations of what experience players could expect from
+the game
+		</p>
+		<p>A layered approach to the use of history—with an overarching goal of
+negotiating expectations for authenticity—is something we can observe in
+the promotional discourses around historical video games more broadly, a
+trend that 
+			<italic>Pentiment</italic> fits neatly into. I have elsewhere
+proposed that we can consider three distinct but interlocking conceptual
+ways in which history is used in the marketing of historical video
+games. These different layers create discourses we might broadly
+categorize as 
+			<italic>history</italic>
+			<italic>of</italic>,
+
+			<italic>history</italic>
+			<italic>around</italic>, and
+
+			<italic>history</italic>
+			<italic>in.</italic>
+			<xref ref-type="fn" rid="fn12">12</xref> To
+summarize this framework briefly, 
+			<italic>history</italic>
+			<italic>of</italic> encompasses the range of references often “made in
+paratextual spaces to a company’s previous products, as a way of
+creat[ing] expectations for ‘authenticity’ (and quality) by association
+with brand image.”
+			<xref ref-type="fn" rid="fn13">13</xref> Second,
+
+			<italic>history</italic>
+			<italic>around</italic> involves paratextual
+discourses that make “intertextual connections out to other cultural
+reference points,” perhaps to other games or wider media, and how this
+fleshes out the game’s historical representation or
+experience.
+			<xref ref-type="fn" rid="fn14">14</xref> Finally,
+
+			<italic>history</italic>
+			<italic>in</italic> involves highlighting
+“historical anchor points,” by a developer, critic, or other
+stakeholder, offering players insights and creating expectations for the
+representations of the past that they might find within a given game,
+and the developer’s approach to doing
+history.
+			<xref ref-type="fn" rid="fn15">15</xref> These layers work
+together to create multiple historical access points for audiences, but
+they also shore up claims about a game’s quality and supposed
+authenticity in different ways.
+			<xref ref-type="fn" rid="fn16">16</xref>
+They often intertwine with each other, but much of the discourse we
+might characterize as 
+			<italic>history</italic>
+			<italic>of</italic> and
+
+			<italic>history</italic>
+			<italic>around</italic> tends to support and
+underpin the weight of 
+			<italic>history</italic>
+			<italic>in</italic> and
+the legitimacy of a developer’s engagement with the past.
+		</p>
+		<p>This article explores the ways that the paratextual discourses around
+
+			<italic>Pentiment</italic> emphasized the inherently constructed nature
+of historical representations while paradoxically selling the
+reconstruction of an authentic history of sixteenth-century Europe via
+stress on the replication of visual and material culture from the
+period. In doing so, it adds to the growing body of research that takes
+the paratextual discourses around historical video games seriously,
+considering them vital to our understanding of the way games negotiate
+meaning from the past.
+			<xref ref-type="fn" rid="fn17">17</xref> The
+corpus of material for this article consists mainly of two distinct
+types of digital paratext: (1) those generated by the developer
+(Obsidian Entertainment) and publisher (Microsoft); and (2) critical
+reviews of the game,
+			<xref ref-type="fn" rid="fn18">18</xref> or pre- and
+postrelease features published in the gaming and entertainment press,
+including interviews with members of the development team.
+		</p>
+		<p>These sources of paratextual content, which players may encounter
+before, during, or after experiencing a game, speak to and about it: one
+produced and managed by developers, publishers, and marketers, and
+another that arises in response to game releases. Though the product of
+adjacent industries, they are intrinsically related, and the principal
+function of both kinds of content overlaps significantly: to frame and
+shape player expectations and experience. Game promotional materials
+generated by developers and publishers, and reviews and features written
+by critics and published by gaming and entertainment media outlets, both
+work to create and manage expectations as gatekeepers or intermediaries
+who attempt to negotiate meaning for potential
+players.
+			<xref ref-type="fn" rid="fn19">19</xref> In this sense, both
+kinds of sources are what Martin Barker describes as “prefigurative” or
+“performative” framing content, Jonathan Gray as “entryway paratexts,”
+and Jason Mittell as “orienting
+paratexts.”
+			<xref ref-type="fn" rid="fn20">20</xref> In all senses, these
+texts have an ultimate goal of engaging an audience, and negotiating and
+influencing the potential experience, meaning, and value of a
+game—whether they do so successfully or not. These sources are distinct
+but ultimately connected points in a wider discursive web that forms the
+terrain of video game production and consumption. They are part of “the
+whole range of wider connected textual phenomenon [that] draws our
+attention to [a game] as an object of and for play,” as Ed Vollans
+summarizes, drawing on a broad range of theoretical explorations of
+video game and media (para)textuality from Mia Consalvo to T. L. Taylor,
+Stephen Heath, and Nick Couldry.
+			<xref ref-type="fn" rid="fn21">21</xref>
+Making connections between their content is a vital aspect of the “need
+to study how all the circulating prior information, talk, images and
+debates generate and shape expectations which will influence” how an
+audience responds to any form of
+media.
+			<xref ref-type="fn" rid="fn22">22</xref> In this sense, paying
+attention to how these sources reflect and layer different historical
+aspects of any given game and its wider historical context, and how they
+work (explicitly or otherwise) to create expectations about
+authenticity, allows us to understand reception of this concept as an
+active process of perception management rather than a static value. Such
+paratextual sources then have both “pragmatic” and “evaluative”
+functions in that they are attempts at both “controlling and managing
+the work’s overall public reception,” as well as “claiming or demanding
+value and cultural significance” for a game, as Annika Rockenberger
+argues.
+			<xref ref-type="fn" rid="fn23">23</xref>
+		</p>
+		<p>A primary focus on these sources helps us to move beyond
+often-implicit assumptions that the game itself is the central object of
+importance and most significant site of meaning when we explore the
+relationship between games and
+history.
+			<xref ref-type="fn" rid="fn24">24</xref> It recognizes that
+gameplay “doesn’t exist in a vacuum” and that a range of different texts
+do as much, if not more, to explore what it means to represent and
+engage with the past in video
+games.
+			<xref ref-type="fn" rid="fn25">25</xref>
+		</p>
+		<p>
+			<bold>
+				<italic>History</italic>
+			</bold>
+			<bold>
+				<italic>of</italic>: “I
+Don’t Know the First Thing about 16th Century Europe, but I Believe What
+Obsidian’s Telling Me About
+It”
+			</bold>
+			<xref ref-type="fn" rid="fn26">26</xref>
+		</p>
+		<p>Promotional materials that feature developer commentary are
+particularly important for understanding the role that the
+
+			<italic>history</italic>
+			<italic>of</italic> a developer plays in the
+game’s marketing and reception. Foregrounding the company and/or
+individuals involved in a game’s production figures prominently in game
+promotion and criticism. It is often used as a guarantee of quality (or
+occasionally, statements to the opposite effect) but also provides
+insights into “important information about the influences and the
+history of the production.”
+			<xref ref-type="fn" rid="fn27">27</xref>
+Leora Hadas’s notion of “promotional authorship” underscores that
+individuals’ or entire studios’ identities are often mobilized to tap
+into “deeply embedded cultural ideas and narratives about genius and
+expression, the authentic and the fake, and power relations in the
+construction of meaning around the texts of popular
+culture.”
+			<xref ref-type="fn" rid="fn28">28</xref> Likewise, Nick Webber
+has conveyed the importance of authorship within understandings of
+(para)textuality relating to historical
+games.
+			<xref ref-type="fn" rid="fn29">29</xref> Thus, the
+
+			<italic>history</italic>
+			<italic>of</italic> a company can guarantee
+quality (or specific qualities) and manage expectations.
+		</p>
+		<p>Obsidian’s experience as a studio, and some of its well-known games,
+are a core part of 
+			<italic>Pentiment</italic>’s 
+			<italic>history</italic>
+			<italic>of</italic> discourse. A behind-the-scenes video uploaded to
+Obsidian’s YouTube channel promises to take viewers “behind the ink,”
+exploring the design and development of script, font, and art style
+vital to its narrative and visual design. The video opens with Josh
+Sawyer, 
+			<italic>Pentiment</italic>’s creative director, discussing his
+desire to make the game, connecting it specifically to Obsidian’s
+profile as a developer: “When I got in the game industry, I was like
+‘you know, I’d really like to make a historical game.’ Obsidian is kind
+of known for making very complex, mechanical games. Games that are
+focused on story, focused on
+characters.”
+			<xref ref-type="fn" rid="fn30">30</xref> Reviews and
+features likewise describe the studio as a “renowned role-playing game
+developer,” with Sawyer as their “star
+director.”
+			<xref ref-type="fn" rid="fn31">31</xref> Articles similarly
+refer to the game as “a passion project for lead designer Josh Sawyer”
+or otherwise “a passion project for the developers at Obsidian,”
+including art director Hannah Kennedy’s Deep Dive feature for website
+Game Developer.
+			<xref ref-type="fn" rid="fn32">32</xref>
+		</p>
+		<p>
+			<bold>[Insert Figure 2 here].</bold>
+		</p>
+		<p>Sawyer is central to this discourse not simply because he was
+
+			<italic>Pentiment</italic>’s creative director but also because of his
+own experience and reputation as lead designer and project director of
+the “much loved” 
+			<italic>Fallout:</italic>
+			<italic>New</italic>
+			<italic>Vegas</italic> (2010).
+			<xref ref-type="fn" rid="fn33">33</xref>
+That game isn’t specifically mentioned in “Behind the Ink,” but a shot
+early in the video (while Sawyer narrates Obsidian’s history as a
+developer of story-focused games) zooms in on a model of a Brotherhood
+of Steel suit of armor—a prominent icon from the franchise looming large
+over discussion of the developer’s brand identity
+(fig. 2).
+			<xref ref-type="fn" rid="fn34">34</xref> Critical discussions
+of 
+			<italic>Pentiment</italic> frequently mention
+
+			<italic>Fallout:</italic>
+			<italic>New</italic>
+			<italic>Vegas</italic>,
+and Sawyer’s involvement in it, often name-checking it in titles of
+features or reviews. For example, a review for Polygon is titled
+“Obsidian’s Murder Mystery Pentiment Is Full of Tough, Fallout-Style
+Choices,” and subtitled “As in New Vegas, There Are No Perfect
+Outcomes.”
+			<xref ref-type="fn" rid="fn35">35</xref> The reviewer judges
+that the game’s conclusion feels “very much in keeping with the best of
+Obsidian’s previous work, like 
+			<italic>Fallout:</italic>
+			<italic>New</italic>
+			<italic>Vegas</italic>, in that there’s no easy
+choices, no ‘best’ options that will lead to the ‘good’
+ending.”
+			<xref ref-type="fn" rid="fn36">36</xref>
+			<italic>New</italic>
+			<italic>Vegas</italic> is elsewhere held up as an example of the sorts
+of games Obsidian is good at making: “known for producing high quality
+stories and characters through its storied history as a developer” with
+a “blend of combat and dialogue trees that place[s] an emphasis on
+choices and their impacts.”
+			<xref ref-type="fn" rid="fn37">37</xref> An
+IGN interview with Sawyer noted that 
+			<italic>Pentiment</italic> will
+explore “a number of the same themes” as games like 
+			<italic>New</italic>
+			<italic>Vegas</italic>, such as “death, social transformation, and class
+conflict.”
+			<xref ref-type="fn" rid="fn38">38</xref>
+			<italic>Pentiment</italic> is viewed as a game that very much follows in
+these footsteps and “plays to their
+strengths.”
+			<xref ref-type="fn" rid="fn39">39</xref> A popular, existing
+product is here emphasized as an example that proves Obsidian’s mettle
+in developing nuanced, narrative-driven games, laying the groundwork of
+expectation for what 
+			<italic>Pentiment</italic> hoped to achieve in
+reception.
+		</p>
+		<p>But this discourse can work in the opposite direction, too, while
+still in 
+			<italic>Pentiment</italic>’s favor. That the game has “a much
+narrower scope than Obsidian’s other RPGs, which strive to depict entire
+cities, states, even continents” is viewed positively, in that
+“Pentiment can spend more of its time on making the small things
+matter.”
+			<xref ref-type="fn" rid="fn40">40</xref> Indeed, elsewhere the
+game’s uniqueness and rarity are praised: “A game like Pentiment doesn’t
+come around often. Top developers like Obsidian Entertainment usually
+leave smaller productions like this on the editing
+floor.”
+			<xref ref-type="fn" rid="fn41">41</xref> That
+
+			<italic>Pentiment</italic> is unlike many of Obsidian’s grander scale
+projects links to another important way in which a discourse of
+authenticity was being constructed: that it was developed in an
+intrinsically different way from most AAA games. One review described it
+as “heedfully crafted,” while noting that “a small team of thirteen
+developers at Obsidian Entertainment” worked on
+it.
+			<xref ref-type="fn" rid="fn42">42</xref> Even if the reviewer didn’t
+enjoy the game’s art style, they still appreciated that “you can feel
+the experience and
+craftsmanship.”
+			<xref ref-type="fn" rid="fn43">43</xref> Critics
+ultimately saw that 
+			<italic>Pentiment</italic>’s production
+limitations—a small development team, no voice acting, and a minuscule
+budget—aided rather than detracted from the game.
+		</p>
+		<p>This discourse also attempts to draw some of the legitimacy, and
+indeed authenticity, from the aesthetic and identity of independent game
+development. It suggests that a small team, working with care and
+passion, could elevate a game’s value and achievements. As Jesper Juul
+notes, while definitions of independent game are far from agreed upon,
+independent digital games operate in relation to particular “early
+twenty-first-century ideas of authenticity” that revolve around
+qualities such as “the analog, the local, the personal, the physical,
+and the handcrafted.”
+			<xref ref-type="fn" rid="fn44">44</xref>
+			<italic>Pentiment</italic> also tries to capture much about the early
+modern period’s visual and print culture through the care and attention
+the developers paid to emulating the handcrafted appearance of the
+myriad details of illuminated manuscripts.
+		</p>
+		<p>The game is replete with elements that connote the craft and artistry
+of books and other forms of visual and material culture. For example,
+the pages of an imagined manuscript are the platform upon which the game
+unfolds. The game first requires that players remove the existing layer
+of script and artwork from the manuscript’s first page by rubbing a
+stone against it, rendering it blank to craft their own new layer of
+history upon it. At specific points during play, they can choose to zoom
+out of a given scene, revealing that it is an illustration for a
+chronicle of Andreas’s life and deeds and is written on these pages in
+Latin script. Marginalia comprising illustrations and text accompanies
+each frame, and page, providing the player with broader historical
+context, such as explaining the relevance of people, places, and events
+to the way the game interfaces with the larger history of
+sixteenth-century Europe (fig. 3). Some marginalia, however,
+historicizes fictionalized elements of the game—invented, but
+narratively significant to the history of Tassing and Kiersau—affording
+them a veneer of authenticity alongside annotations that describe real
+historical details (fig. 4).</p>
+		<p>
+			<bold>INSERT FIGS. 3 &amp; 4 HERE.</bold>
+		</p>
+		<p>Animations that seem to turn these pages mechanically depict the
+player’s progress and navigation around the game world, giving the
+overall effect of the player advancing Andreas’s story and constructing
+this chronicle as they interact with the game and make choices about
+narrative progress and game-space exploration. In this sense, there are
+dual functions here: to create an analog, handcrafted look and feel and
+to emphasize the player-historian’s role in constructing this
+(hi)story.
+			<xref ref-type="fn" rid="fn45">45</xref>
+		</p>
+		<p>Calling 
+			<italic>Pentiment</italic> an 
+			<italic>independent</italic>
+game seems tenuous given Obsidian’s status as an established developer
+of commercial games that had been acquired by no less than Microsoft in
+2018.
+			<xref ref-type="fn" rid="fn46">46</xref> Nonetheless, website
+Destructoid’s feature connects these diverging threads in one
+paragraph:
+		</p>
+		<disp-quote>
+			<p>The one thing about 
+				<italic>Pentiment</italic> that comes across
+  the strongest after only minutes of playing it is that this [game] was
+  made with so, so much love. The game is the love child of Obsidian
+  game designer and 
+				<italic>Pentiment</italic> director Josh Sawyer, who
+  worked on classics like 
+				<italic>Fallout:</italic>
+				<italic>New</italic>
+				<italic>Vegas</italic> and 
+				<italic>Pillars</italic>
+				<italic>of</italic>
+				<italic>Eternity</italic>. The game was pitches
+  [
+				<italic>sic</italic>] years ago, but the fact that it was finally
+  made after all this time and with such care is a testament to the
+  strength of the premise, and to the dedication that went into bringing
+  it to life. …
+			</p>
+			<p>For years, one of my biggest hopes for the games industry is that
+  larger studios with big teams and seemingly endless resources would
+  break off into smaller teams and bring their passion projects to
+  life—it seems that’s exactly what Obsidian did in this
+  situation.
+				<xref ref-type="fn" rid="fn47">47</xref>
+			</p>
+		</disp-quote>
+		<p>Ultimately, such a discourse works to legitimize the game as a
+product of, effectively, a safe pair of hands. For an untested
+intellectual property—and something unconventional for both the
+developer and industry more broadly—this is crucial. Indeed, as one
+reviewer remarked, “For a not insignificant portion of my time with it,
+I wondered if I’d be giving Pentiment the benefit of the doubt to this
+extent if it wasn’t made by Obsidian. The answer is that probably I
+wouldn’t, and that ironically I’d probably have given up on it just
+before the legendary RPG studio’s qualities really come to the fore.”
+Ultimately, the review judged that “it’s hard to imagine this game
+conveying such authority in its historical detail if it came from
+another developer, either. I don’t know the first thing about 16th
+century Europe, but I believe what Obsidian’s telling me about
+it.”
+			<xref ref-type="fn" rid="fn48">48</xref> It is not just a general
+value and sense of authenticity being ascribed to the game’s
+development, then; more importantly, the game’s historical
+representation is trusted because the team behind it can be trusted.
+		</p>
+		<p>
+			<bold>
+				<italic>History</italic>
+			</bold>
+			<bold>
+				<italic>around:</italic>
+			</bold>
+			<bold>“Pentiment Feels Like an
+Umberto Eco Novel Drawn to
+Life.”</bold>
+			<xref ref-type="fn" rid="fn49">49</xref>
+		</p>
+		<p>Alongside the importance of a developer’s brand identity and history,
+explicit reference to other popular media texts is also a key part of
+the discourse around any forthcoming video game. Both a game’s promotion
+and critical reception often clearly attempt to place the new title
+within a broader intertextual web of popular culture. In part, this
+contextualizing is an attempt to convey certain qualities of a potential
+game experience, based on assumptions potential players might have from
+previous experience of, or interests in, popular
+media.
+			<xref ref-type="fn" rid="fn50">50</xref> In no small part, this is
+due to the fact that developers of historical games, “with and without
+scholarly training[,] employ a broad set of sources, including other
+games, to design and build historical events and
+processes.”
+			<xref ref-type="fn" rid="fn51">51</xref> But it is also an
+attempt to ensure quality—or indeed, construct claims of authenticity.
+
+			<italic>Pentiment</italic> was no exception to this.
+		</p>
+		<p>
+			<italic>Pentiment</italic> reviewers bring a broad array of texts
+into their discussions. For instance, given the game’s murder-mystery
+framing, several reviews reference well-known literary-historical
+detectives. These range from Agatha Christie’s Hercule Poirot and
+Frogware’s recent 
+			<italic>Sherlock</italic>
+			<italic>Holmes</italic>
+series to other famous pop-cultural sleuths: “You’re running around the
+village like Columbo in a
+tunic.”
+			<xref ref-type="fn" rid="fn52">52</xref> One review alludes to
+
+			<italic>Cadfael</italic>, a late-1990s British television mystery series
+based on Ellis Peters’s series of historical mystery novels,
+
+			<italic>The</italic>
+			<italic>Cadfael</italic>
+			<italic>Chronicles</italic>. It portrays a twelfth-century Benedictine
+monk as a murder-solving detective, a premise closer in some respects to
+
+			<italic>Pentiment</italic>’s setting and characters than the other
+notable modern sleuths.
+			<xref ref-type="fn" rid="fn53">53</xref> Such
+examples broadly position the game within the genre of murder mystery
+and investigation, suggesting that it would be a satisfying take on
+expected generic conventions.
+		</p>
+		<p>However, Sawyer repeatedly locates 
+			<italic>Pentiment</italic> more
+widely into the history of narrative-focused video games. Interviews and
+other features mention that the 1992 MicroProse title
+
+			<italic>Darklands</italic>, with its fifteenth-century setting and
+reliance on historical source material, served as Sawyer’s primary
+inspiration for the way 
+			<italic>Pentiment</italic> incorporates
+traditional historical
+knowledge.
+			<xref ref-type="fn" rid="fn54">54</xref> One feature notes
+that Sawyer “fell in love with [
+			<italic>Darklands</italic>’s] approach
+to historical fiction, and as he went on to get a degree in history and
+subsequently work in games, the idea of a historical fiction game stuck
+with him.”
+			<xref ref-type="fn" rid="fn55">55</xref> The game uses social
+classes so that players can use their specific backgrounds and skills to
+“
+			<italic>speak</italic>
+			<italic>common,</italic>
+			<italic>speak</italic>
+			<italic>Latin,</italic>
+			<italic>ride</italic>
+			<italic>horse</italic>,”
+and so on. These are reflected in the way that, in
+
+			<italic>Pentiment</italic>, the players are told explicitly that their
+choice of background, education, and interests will “affect your
+character’s choices going forward,” influencing dialogue options and
+narrative outcomes
+(fig. 5)
+			<italic>.</italic>
+			<xref ref-type="fn" rid="fn56">56</xref>
+		</p>
+		<p>
+			<bold>[Insert Figure 5 here]</bold>
+		</p>
+		<p>There are thus other traces of 
+			<italic>Pentiment</italic>’s
+discursive positioning as an indie game in its promotion. As Juul
+writes, when indie games reference “older visual styles,” this “carries
+a deeper meaning because independent games, though new, tend to claim,
+explicitly or implicitly, to go back to an earlier and better time: to
+the beginning of video game history,” to “simpler games” made by fewer
+people.
+			<xref ref-type="fn" rid="fn57">57</xref> Taking design cues from
+a (much) older game Sawyer had a personal connection to, and this being
+a frequently repeated talking point, is an attempt to construct
+
+			<italic>Pentiment</italic>’s authenticity as a successor historical
+fiction and role-playing game.
+		</p>
+		<p>But beyond the game’s important influence on Sawyer, his experience
+of 
+			<italic>Darklands</italic>’s paratextual materials also inspired a
+notable feature of 
+			<italic>Pentiment’s</italic> promotion. In an IGN
+feature interview with Rebekah Valentine, Sawyer noted that
+		</p>
+		<disp-quote>
+			<p>Arnold Hendrick, [the lead designer on 
+				<italic>Darklands</italic>]
+  ... included a bibliography in the manual for Darklands, and a number
+  of the books in his bibliography I bought and have on my shelf … I
+  could find where he got his information, and get that source myself,
+  and then use that for my own work. I just wanted, if someone at the
+  end of [
+				<italic>Pentiment</italic>] is like, “Wow, I love this,
+  history sounds great.” I want them to be able to have the same
+  opportunity I had where I played Darklands, and I'm like, “Oh, where
+  did all this stuff come from?” It came from here, here’s all the
+  reference material, just check it
+  out.
+				<xref ref-type="fn" rid="fn58">58</xref>
+			</p>
+		</disp-quote>
+		<p>The game here functions as a jumping-off point for a player
+interested in expanding their knowledge of the historical period that it
+speaks to. Moreover, such a strategy also positions a game within a
+wider web of legitimate historical research that it is based on and
+inspired by, conferring the authority of historical scholarship onto the
+game’s reinterpretation of it. Following in 
+			<italic>Darklands</italic>’s
+(and Hendrick’s) footsteps, five days before the game’s release, the
+
+			<italic>Xbox</italic>
+			<italic>Wire</italic> blog published “A
+Recommended Reading List of Late Medieval History from Pentiment Game
+Director Josh Sawyer.”
+			<xref ref-type="fn" rid="fn59">59</xref> Among
+screenshots from the forthcoming game, the article mentioned a range of
+academic books, accompanied by Sawyer’s commentary, which offered a
+personal perspective on their relevance and significance. Prominent
+among these recommendations were Natalie Zemon Davis’s
+
+			<italic>The</italic>
+			<italic>Return</italic>
+			<italic>of</italic>
+			<italic>Martin</italic>
+			<italic>Guerre</italic> (1983), Carlo Ginzburg’s
+
+			<italic>The</italic>
+			<italic>Cheese</italic>
+			<italic>and</italic>
+			<italic>the</italic>
+			<italic>Worms:</italic>
+			<italic>The</italic>
+			<italic>Cosmos</italic>
+			<italic>of</italic>
+			<italic>a</italic>
+			<italic>Sixteenth-Century</italic>
+			<italic>Miller</italic> (1976), and
+Umberto Eco’s historical novel 
+			<italic>The</italic>
+			<italic>Name</italic>
+			<italic>of</italic>
+			<italic>the</italic>
+			<italic>Rose</italic> (1983), the latter designated “a huge inspiration
+for Pentiment.”
+			<xref ref-type="fn" rid="fn60">60</xref> Reviews and
+interviews with Sawyer frequently evoked this work of historical
+fiction.
+			<xref ref-type="fn" rid="fn61">61</xref> Christian Donlan went
+so far as to observe that, at least to begin with, “Pentiment is a bit
+of a Name of the Rose simulator”
+(fig. 6).
+			<xref ref-type="fn" rid="fn62">62</xref>
+		</p>
+		<p>
+			<bold>[Insert Figure 6 here]</bold>
+		</p>
+		<p>But beyond just being points of interest a player might decide to
+further explore, these recommendations have a common, microhistorical
+approach to their subject matter. Many descriptions explicitly detail
+how the featured books value the experiences of singular
+ordinary-yet-remarkable people and explore them (and their immediate
+geographic or social context) in extreme
+depth.
+			<xref ref-type="fn" rid="fn63">63</xref> Each book touches on a
+different aspect of 
+			<italic>Pentiment</italic>’s interpretation and
+representation of early modern Europe—from traveling artists, to the
+mysterious disappearance and reappearance of so-called changed men (in a
+quest called “The Return of Martin Bauer” that deliberately nods to
+Zemon Davies), peasant uprisings, and a variety of atypical or eccentric
+individuals. Sawyer’s commentary on the books also offers a sense of a
+particular historiographical intervention, with Sawyer occupying the
+position of
+“developer-historian.”
+			<xref ref-type="fn" rid="fn64">64</xref>
+Discussing 
+			<italic>The</italic>
+			<italic>Cheese</italic>
+			<italic>and</italic>
+			<italic>the</italic>
+			<italic>Worms</italic>, Sawyer
+writes that “
+			<italic>Ginzburg</italic>
+			<italic>was</italic>
+			<italic>one</italic>
+			<italic>of</italic>
+			<italic>the</italic>
+			<italic>first</italic>
+			<italic>historians</italic>
+			<italic>to</italic>
+			<italic>start</italic>
+			<italic>popularizing</italic>
+			<italic>micro-historical</italic>
+			<italic>examinations</italic>
+			<italic>of</italic>
+			<italic>what</italic>
+			<italic>could</italic>
+			<italic>today</italic>
+			<italic>be</italic>
+			<italic>classified</italic>
+			<italic>as</italic>
+			<italic>weird</italic>
+			<italic>little</italic>
+			<italic>dudes</italic>” (emphasis in
+original).
+			<xref ref-type="fn" rid="fn65">65</xref>
+		</p>
+		<p>This latter point is particularly important. A thread about the
+oddity of the past and people’s lives runs through many of these
+citations. It is elsewhere reflected in other forms of promotion, like
+the “Behind the Ink” YouTube video, very early in which Sawyer states
+“if I’m really focusing on telling a story more than mechanics, the
+weirdest fiction we can come up with in some cases just doesn’t hold a
+candle to the weird stuff that’s actually happened in
+history.”
+			<xref ref-type="fn" rid="fn66">66</xref> Rebekah Valentine’s
+feature/interview for IGN echoes this point and refers to the
+recommended reading list: that in drawing inspiration from such works’
+cast of interesting historical figures, 
+			<italic>Pentiment</italic> is “a
+game that promises to be chock full of such ordinary extraordinary
+tales.”
+			<xref ref-type="fn" rid="fn67">67</xref>
+		</p>
+		<p>The incorporation of these historical texts into the game’s
+promotional surround, and their framing as recommendations from a game’s
+creative executives, is strikingly similar to the use of such discourse
+in the marketing of other historical
+games.
+			<xref ref-type="fn" rid="fn68">68</xref> It functions essentially
+as an annotated bibliography, seeking to both gain player interest and
+establish another level of historical authenticity around the game by
+demonstrating that it draws heavily on traditional, academically
+produced historical knowledge. Some features note that the use of
+historical consultants (“with PhDs”) and the team’s “robust amount of
+research” make 
+			<italic>Pentiment</italic> “ripe for usage in an academic
+environment.”
+			<xref ref-type="fn" rid="fn69">69</xref> But this discourse
+still chiefly hinges on the sort of 
+			<italic>history</italic>
+			<italic>of</italic> discourse that center Sawyer in the capacity of
+developer-historian, or perhaps also auteur: “While he’s had a storied
+career working on hits like Fallout: New Vegas … Sawyer’s been
+ruminating on an historical game for a long, long time. His published
+reading list for Pentiment enthusiasts hearkens back to his college
+days; he tells me that working from it to develop Pentiment is ‘like
+going back to the greatest hits of my tour of studying early modern
+Europe in college.’”
+			<xref ref-type="fn" rid="fn70">70</xref> Sawyer’s
+own study of medieval and early modern history is emphasized in other
+postrelease interviews, too, such as a feature with
+
+			<italic>Wired</italic> in which he recounts his college days. In doing
+so, Sawyer takes time to dispel some of the myths and misunderstandings
+of the period as “one long, uninterrupted period of nothing happening,
+or just wars or whatever,” and that actually, it is one that is much
+more complex than collective understandings of it might suggest:
+“There’s so much social change going on. Changing religious
+institutions, academic institutions, social structures. Capitalism
+starts to sort of barely emerge. There’s a lot of cross-cultural
+contact, because of trade that takes people across the world. So this
+period has always been really interesting to me, just because of
+everything that’s going on.”
+			<xref ref-type="fn" rid="fn71">71</xref>
+Valentine describes the recommended reading list as having “the joyous
+feel of a syllabus, based around preparing for a course on 16th-century
+European history and life.”
+			<xref ref-type="fn" rid="fn72">72</xref>
+Likening such a piece of promotional material to a pedagogical exercise
+is further evidence of the role the developer, as historian, occupies in
+promotional discourses explicitly designed to mobilize historical
+evidence and connote
+authenticity.
+			<xref ref-type="fn" rid="fn73">73</xref> Doing so, on the
+one hand, entices players—particularly those already interested in
+history. But it also works to induct them into the developer’s specific
+interpretation of a particular historical event—or in this case, style
+of historical writing to which the game also aspires. This works in
+close contact with the kinds of promotional and critical discourses that
+elevate individual or a small number of creative executives into an
+authorial role; here, a key figure like Sawyer speaks with authority
+about the game’s historical touchstones and his own knowledge of the
+past it engages.
+		</p>
+		<p>Mirroring the prerelease recommended reading list, the game itself
+also has a bibliography of references in its closing credits (fig. 6).
+Much greater in volume and scope, this list bookends the prerelease
+annotated bibliography with further assurances of research, and thus
+historical quality. The broader inspiration that the development team
+has taken from the history 
+			<italic>of</italic> historical
+games—particularly RPGs like 
+			<italic>Darklands—</italic>works to not
+only authenticate 
+			<italic>Pentiment</italic>’s engagement with the past
+by association with other video games, but also with other, more
+legitimate historical source material. The bibliography mimics the
+conventions of academic history by providing references to support the
+game’s overall argument. Making a direct connection to
+
+			<italic>Darklands</italic> and its precedent-setting inclusion of a
+bibliography, and how unusual it is for contemporary games like
+
+			<italic>Pentiment</italic> to follow suit, Austin Suther notes that the
+“credits of Pentiment is [
+			<italic>sic</italic>] proof of Obsidian
+Entertainment’s dedication to historical accuracy”
+(fig. 7).
+			<xref ref-type="fn" rid="fn74">74</xref>
+		</p>
+		<p>
+			<bold>[Insert Figure 7 here]</bold>
+		</p>
+		<p>In an interview with Waypoint Radio, Josh Sawyer described
+
+			<italic>Pentiment</italic> as “
+			<italic>Night</italic>
+			<italic>in</italic>
+			<italic>the</italic>
+			<italic>Woods</italic> meets
+
+			<italic>The</italic>
+			<italic>Name</italic>
+			<italic>of</italic>
+			<italic>the</italic>
+			<italic>Rose</italic>.”
+			<xref ref-type="fn" rid="fn75">75</xref> This
+epitomizes attempts to draw on both the cultural capital of a narrative
+RPG style established by other acclaimed indie games (an identity that
+
+			<italic>Pentiment</italic> was consciously positioned as sharing, albeit
+paradoxically), with the established historical capital of respected
+works of microhistory. This demonstrates the importance of a discourse
+designed to curate a constellation of sources that form a layer of
+
+			<italic>history</italic>
+			<italic>around</italic> a game and, indeed, its
+importance to constructed claims and reception of an authentic
+engagement with 
+			<italic>history</italic>
+			<italic>in</italic>
+			<italic>Pentiment.</italic> It is also where we begin to feel the
+tension between the game’s de- and reconstructionist epistemological
+positions—wanting it both ways in accounting for and eschewing
+historical complexity.
+		</p>
+		<p>
+			<bold>
+				<italic>History</italic>
+			</bold>
+			<bold>
+				<italic>in:</italic>
+			</bold>
+			<bold>“
+				<italic>Pentiment</italic> Is
+about History as a Force, as Well as a
+Moment.”
+			</bold>
+			<xref ref-type="fn" rid="fn76">76</xref>
+		</p>
+		<p>Most of the discussion we might position within the
+
+			<italic>history</italic>
+			<italic>of</italic> and
+
+			<italic>history</italic>
+			<italic>around</italic> layers directly informs
+the way that 
+			<italic>history</italic>
+			<italic>in</italic> a game is
+discussed and marketed. The build-up of identity for the game’s studio
+and director, and their history and experience, as well as the web of
+historical and cultural intertextual reference points that encompassed
+the game’s release all create specific access points that construct a
+sense of authenticity around 
+			<italic>Pentiment—</italic>both as a
+worthwhile game experience and as a historical intervention with
+something meaningful to say about its subject matter.
+		</p>
+		<p>But as noted, at its core 
+			<italic>Pentiment</italic> also strongly
+reflects on the practice of history itself, deconstructing the
+relationship between a past that existed and what we come to remember
+and represent about it, for conflicting reasons. This is also
+fundamental to the game’s narrative and the way such an approach frames
+the choices that players can make about piecing it together. For
+example, at the outset of the third act of 
+			<italic>Pentiment</italic>,
+the player witnesses a conversation between father and daughter Claus
+and Magdalene Drucker, the owners of a printing shop in Tassing. In
+consultation with the town council, Claus has been made responsible for
+painting a memorial in the town hall immortalizing Tassing’s history.
+For various reasons linked to the overarching story of the game—as it
+spans almost three decades between 1518 and 1543—what this memorial
+should include about the town’s past and present has become contentious
+and a source of frustration for Claus. The conversation proceeds as
+follows:
+		</p>
+		<disp-quote>
+			<p>
+				<bold>Claus</bold>: Those men don’t know what they want. When I
+  tell them what I’m trying to do, they get scared. … They talk all day
+  and we’re never any closer to a decision. I’m sick of it, sick of the
+  whole thing. … I’ve spent my whole life illustrating and printing
+  other peoples’ stories. For the first time, I feel like this is my
+  story to tell.
+			</p>
+			<p>
+				<bold>Magdalene</bold>: I didn’t know it was so important to
+  you.
+			</p>
+			<p>
+				<bold>Claus</bold>: We hear all of these stories about what this
+  place was, how it came to be. And it feels like history is something
+  that happened before, happened to other people. But eighteen years
+  ago, we lived through something, you and I—everyone in Tassing.
+  Everyone wants to forget about it, pretend it didn’t happen.
+			</p>
+			<p>
+				<bold>Magdalene</bold>: You don’t.
+			</p>
+			<p>
+				<bold>Claus</bold>: No, I don’t.
+			</p>
+		</disp-quote>
+		<p>Claus has been deeply affected by his role in traumatic past events
+that involved people from both Tassing and Kiersau. He laments the way
+that people seek to portray the history of those events in a sanitized
+way so that it won’t anger the local lord or visitors. When Magdalene
+reminds him that he “can’t change it,” he affirms: “I know. The least I
+can do is make sure it’s not forgotten. Something happened, we were part
+of it. I need to help people remember that. If I don’t do it, who will?”
+Instances like this throughout 
+			<italic>Pentiment</italic> continually
+foreground that this game is keen for players to understand that the
+relationship between the past and representations of it is not
+uncomplicated but always a product of interpretation and alteration—what
+someone chooses to remember allows others to remember, and why. The
+eventual mural representing the history of Tassing is unveiled at the
+close of the game. The specific images memorialized in each of the
+triptych’s panels are subject to change, determined by the choices the
+player makes about what to include, who they speak to, and what they
+spend time exploring throughout 
+			<italic>Pentiment</italic>’s final act.
+In this sense, gameplay action also foregrounds the subjective,
+constructed nature of history and the consequences of the decisions made
+in the process.
+		</p>
+		<p>This approach was part of the game’s promotion, too, especially when
+drawing other prominent historical voices into this discourse. For
+example, Sawyer evoked Hilary Mantel’s approach to writing historical
+fiction in two interviews, citing the following quote while making a
+point about 
+			<italic>Pentiment</italic>’s construction of the past:
+“Facts are not truth, though they are part of it—information is not
+knowledge. And history is not the past—it is the method we have evolved
+of organizing our ignorance of the past. It’s the record of what’s left
+on the record.”
+			<xref ref-type="fn" rid="fn77">77</xref> He also points
+out that “history doesn’t really exist,” presumably making a broader
+claim that the past is already something that we have lost and cannot
+hope to reconstitute with the completeness that many official, dominant
+historical narratives—and, indeed, historical media—may claim. As a
+result, the team’s approach to creating a meaningful historical fiction
+was less about deferring to so-called facts than it was to create a
+believable historical place, informed by the records available to them.
+The game espouses a more nuanced engagement with the fundamental
+question of what history is, how people relate to it, so a more critical
+look at its inherent subjectiveness was thus vital to the
+developer-generated discourse around the game, using the work of
+historical writers like Mantel (and Zemon Davis, Ginzburg, and Eco) as a
+source of legitimation for their design choices.
+		</p>
+		<p>This is also a thematic engagement that resonated strongly with
+critics in their experience of the game, and it became a central
+observation of many reviews. One feature wrote that the game, and the
+kinds of historical texts it draws inspiration from, “invite[s]
+audiences to examine history through something other than the lofty lens
+we’re used to it being filtered
+through.”
+			<xref ref-type="fn" rid="fn78">78</xref> Referencing the game’s
+title, another feature noted that “
+			<italic>Pentiment</italic>’s aim is
+to show how history, like oil on a canvas, can be covered, then
+rediscovered or forgotten.”
+			<xref ref-type="fn" rid="fn79">79</xref>
+Jordan Rameé added a personal layer to their reflections on the game,
+and history:
+		</p>
+		<disp-quote>
+			<p>I loved reading history books growing up, especially those written
+  more like a storied account of what happened as opposed to straight
+  facts on the page. There’s an implied truth to history when it’s told
+  moreso as a story, as it admits that there’s no objective truth to the
+  past. History is simply what we make of it. Pentiment is written
+  around this idea, providing a means of exploring a point in history
+  from an outsider’s perspective—the protagonist is not native to the
+  region and we, the player, aren’t native to the time period. Rather
+  than simply retell history, Pentiment affords the chance to influence
+  it, and in doing so, delves into the subjectivity of historical
+  record.
+				<xref ref-type="fn" rid="fn80">80</xref>
+			</p>
+		</disp-quote>
+		<p>Donlan extends this broader point about power and history to how the
+game seems to argue more specifically about aspects and agents of the
+period, such as the power of the Catholic Church to control accepted
+narratives. By focusing on “the act of writing” and situating Andreas as
+an artist working in a scriptorium, the game argues that “this room and
+rooms like it were once key to the church’s power. They owned the books
+and they made the books. And they could make books disappear.”
+Ultimately, as Donlan writes, “the pleasures and the politics of text
+and of books are everywhere” in 
+			<italic>Pentiment</italic>, but the game
+is also concerned with larger questions about authorship, power, and
+history: “Who gets to decide what is true? Who gets to write it down,
+and what lies beneath those
+words?”
+			<xref ref-type="fn" rid="fn81">81</xref> Referring to the
+influence of the “engine of class struggle” as an underlying factor (and
+a key theme of the game itself), Joshua Wollens likewise notes that “the
+people of Tassing make their own history, but they don’t make it as they
+please.”
+			<xref ref-type="fn" rid="fn82">82</xref> Indeed, some reviews
+link the game’s critical look at history to its success; for example,
+Jay Castello observes that “even though Pentiment is set in the past, it
+demonstrates how history is never static, and how it influences places,
+communities, and individuals. That’s something that’s easily lost when
+we look back through time, but Pentiment’s living characters and
+spiralling mystery won’t let you forget
+it.”
+			<xref ref-type="fn" rid="fn83">83</xref> Rob Zacny maintains that
+“this is the more mature and interesting version of ‘historical
+accuracy’ than we so often get, complicating an image many of us have of
+the past but without resorting to facile winks at modern
+sensibilities.”
+			<xref ref-type="fn" rid="fn84">84</xref> A high
+proportion of critical perspectives on the game then convey a sense of
+the game’s success in making the reviewers (as players) reflect on the
+notion that neither games, nor any other kind of historical
+representation, have an uncomplicated relationship to the alleged facts
+of the past and the complexities of the process of making history to
+begin with.
+		</p>
+		<p>However, in acute tension with this, aspects of
+
+			<italic>Pentiment</italic>’s promotional discourse were simultaneously
+attempting to construct a sense of the game’s authenticity vis-à-vis a
+real past—projecting more of a reconstructionist epistemological
+approach. As explored by Chapman, games that adopt a “realist
+simulation” style (as 
+			<italic>Pentiment</italic> does, like many
+successful mainstream historical games) “aim and claim to
+
+			<italic>show</italic> the past ‘how it was,’” captured objectively and
+authentically by the developer-historian, a claim often reinforced in
+promotional materials.
+			<xref ref-type="fn" rid="fn85">85</xref> The
+“Behind the Ink” feature historicized the game’s context in this way,
+suggesting that 
+			<italic>Pentiment</italic> would be educational and
+capture an authentic sense of the period, from era-appropriate artwork
+and art style that Obsidian was attempting to preserve, to the social,
+cultural, and political context of sixteenth-century Bavaria
+(fig. 8).
+			<xref ref-type="fn" rid="fn86">86</xref> The game’s official
+reveal trailer claimed that 
+			<italic>Pentiment</italic> was “a narrative
+adventure that brings the past to
+life.”
+			<xref ref-type="fn" rid="fn87">87</xref> The
+
+			<italic>history</italic>
+			<italic>around</italic> discourse that
+emphasized the team’s research in the development process clearly
+attempts to confer authority on the way the game engages and represents
+the period.
+			<xref ref-type="fn" rid="fn88">88</xref>
+		</p>
+		<p>
+			<bold>[Insert Figure 8 here]</bold>
+		</p>
+		<p>Perpetuating this, reviewers also praised the developer’s
+representation of a very specific past, despite the game’s
+fictionalizations. Echoing developer-created promotional materials, many
+reviews praised 
+			<italic>Pentiment</italic>’s success in offering a kind
+of “living history” (a term that frequently reappears), and how it
+embodies a microhistorical approach— that the player spends a large
+amount of time among the people of these small microcosms learning a
+great deal about their daily lives.. Reviewers noted that Pentiment’s
+fictions of both the people and the setting appeared convincingly real:
+“though the characters are inventions of the writers, they give voice to
+the real people who lived through these unforgiving times,” that the
+game accomplishes something “rare among historically set video games. …
+it gives you the feel of the 
+			<italic>real</italic> personality of its
+era,” making it more “believable” than many other games with historical
+settings.
+			<xref ref-type="fn" rid="fn89">89</xref>
+		</p>
+		<p>
+			<italic>Pentiment</italic>’s visual design also lends credibility to
+this “effect of reality” and its supposed basis in historical
+truth:
+			<xref ref-type="fn" rid="fn90">90</xref> “Like every other aspect
+of the game, the basis of the visuals is painstaking research, and it
+shows.”
+			<xref ref-type="fn" rid="fn91">91</xref> Leana Hafer’s review
+exemplifies the often lavish praise for the developer’s achievement in
+creating something that resonated with players: “The whole production
+really feels like a love letter from some serious medieval history fans
+to all the like-minded players such as myself. … Every step of the way,
+I felt like I was geeking out about one of my special interests
+alongside the writers and
+artists.”
+			<xref ref-type="fn" rid="fn92">92</xref>
+		</p>
+		<p>Several different elements of the game were positioned in promotional
+materials as important to its success in building a sense of the
+historical world and Andreas’s perspective. This included, as a frequent
+observation, discussions of the use of font and script in the game to
+connote Andreas’s perceptions of other characters’ status, class, and
+education: “My god, the fonts. Never before has a game made such
+conscious and incredible use of
+fonts.”
+			<xref ref-type="fn" rid="fn93">93</xref> Music was equally
+important given the lack of voice acting in the game: one review praised
+the game’s incorporation of “a few achingly authentic bits of hymnal
+music.”
+			<xref ref-type="fn" rid="fn94">94</xref>
+			<italic>Pentiment</italic>’s limited score was also a feature of the
+game’s marketing postrelease, with an 
+			<italic>Xbox</italic>
+			<italic>Wire</italic> article promoting the forthcoming release of a
+vinyl recording comprised of original music created for the game, a
+collaboration between the development team and “early music ensemble
+Alkemie.” The blog post highlighted their use of “shawms, hurdy-gurdies,
+and myriad other period instruments” to compose and adapt “historical
+pieces from the 14th to 16th centuries for pivotal moments throughout
+the story.”
+			<xref ref-type="fn" rid="fn95">95</xref> The blog speaks of
+attempts to take “the commitment to authenticity further” by
+incorporating not only artwork by art director Hannah Kennedy, but also
+a painting by artist Benjamin Vierling, “who uses a renaissance-inspired
+Mischtechnik, alternating layers of oil paint and egg tempera” and
+creates a portrait of Andreas that included a pentimento beneath it “for
+full thematic resonance.”
+			<xref ref-type="fn" rid="fn96">96</xref> Once
+again, the analog and discourse of handcrafted content are brought to
+the fore to make explicit claims about authenticity.
+		</p>
+		<p>In these promotional materials, such audiovisual aspects of
+
+			<italic>Pentiment</italic> were transformed into discrete “capitalizable
+elements,” to use Barbara Klinger’s term—multiple points of interest (or
+“digressions”) that might entice an
+audience.
+			<xref ref-type="fn" rid="fn97">97</xref> But these parts
+ultimately all work together to promote a game experience with
+constituent, authentic parts and make subtle claims about the game’s
+authenticity because of their connection to analog processes and things.
+For instance, the game space looks like the pages of a manuscript,
+complete with illustrations and marginalia, while Latin script retells
+the game’s story. The sound of quill scratching on paper accompanies the
+animation of dialogue between the characters. Likewise, the game uses
+historical instruments and music, ultimately pressed onto vinyl, as a
+product for players to
+purchase..
+			<xref ref-type="fn" rid="fn98">98</xref> The marketing of this
+game, as a product of this most contemporary digital medium, sought to
+rely on some of the oldest forms of analog media to stake a claim for
+its authenticity. Much like the clams of the game’s production being
+similar to that of independent game development, this is also a
+fundamental marker of quality and meaning
+
+			<xref ref-type="fn" rid="fn99">99</xref> This emphasis also reduces the
+complexities of history, and the history of early modern material and
+visual culture, into an authoritative look and feel, suggesting that
+this is possible to do at all.. The necessity of developing
+
+			<italic>Pentiment</italic>’s unique audiovisual design requires a
+simplification and approximation of a broader, multifaceted history of
+artistic technique and print culture, as well as a specific kind of
+music that seem authentic to the time and place, rather than allowing
+for greater historical variety. Trying to capture the essence of a
+particular historical style presumes, and implicitly suggests, that
+
+			<italic>a</italic>
+			<italic>singular</italic> historical essence exists.
+In this sense, while a significant proportion of the discussion of the
+approach to doing 
+			<italic>history</italic>
+			<italic>in</italic>
+			<italic>Pentiment</italic> sought to account for historical complexity,
+the demands of crafting a unique and commercial historical game push
+promotional and review discourse toward reconstructionist tendencies and
+away from truly consistent deconstructionist approaches.
+		</p>
+		<p>
+			<italic>Pentiment</italic> has thus sparked a variety of discussions
+and evaluations of its engagement with a certain past. In ways distinct
+from other mainstream historical games, critics reflected on the nature
+of history itself and the role memory, selection, and power play in its
+construction. It is an impressive feat for a mainstream game to
+encourage such critical reflection rather than general observations
+about a game’s supposed authenticity. However, neither the game’s
+promotion nor critical reception escape the need for authenticity to be
+the standard by which historical games are judged. Even though not all
+reviews or promotional materials deployed the term, it still casts a
+shadow as a benchmark used to connote 
+			<italic>Pentiment</italic>’s
+successes and ultimate value as a contemporary video game. It therefore
+aptly reflects Chapman’s lament that commercial video games rarely adopt
+deconstructionist approaches.
+			<xref ref-type="fn" rid="fn100">100</xref>
+Understanding the way that developers promote and reviewers evaluate
+
+			<italic>history</italic>
+			<italic>in</italic> a video game, we see the
+importance of understanding the way the other kinds of historical
+discourse are key to the production and reception of the past in a game
+and, in particular, its perceived authentic qualities.
+		</p>
+		<p>
+			<bold>Conclusions</bold>
+		</p>
+		<p>The potential of games to function as a form of historical
+representation has long been explored, and games are often found to be
+wanting in their engagement with the past because they are so often
+unlike academic history.
+			<xref ref-type="fn" rid="fn101">101</xref>
+			<italic>Pentiment</italic> is noteworthy because it is a game that
+sought to shed light on the complexity of history and memory and thus
+engage with the past in a way that was more critical than usual.
+Moreover, these ideas featured prominently in the promotional discourse
+around the game. Considering the ways that different aspects of a
+historical game are identified, isolated, and dispersed through a range
+of digital paratexts allows us to see that history in games is complex
+and can be interpreted in several ways but always requires a layered
+approach.
+		</p>
+		<p>By applying this framework to 
+			<italic>Pentiment</italic>, I endeavor
+to propose a way of conceptualizing the myriad ways that history, and
+historical discourses, are used in the promotion of historical video
+games. Doing so recognizes that when game makers, marketers, and/or
+critics discuss a game’s historical resonances, this is not a neat and
+simple process of merely pointing our factual historical aspects and
+where they may (or may not) appear in a game; it is, rather, as complex
+as the very nature of what history is, as a discourse built up of
+multiple competing representations of the past. Moreover, these
+categories of historical discourse—
+			<italic>of</italic>,
+
+			<italic>in</italic>, 
+			<italic>around</italic>—are not neat themselves.
+They often overlap and collide, combining in multiple ways, because
+history itself is not inherently neat and isolated—it is always a
+process and result of of subjective interpretation.
+		</p>
+		<p>By acknowledging, as part of its branding, marketing, and gameplay,
+that history is not the past, that evidence is incomplete, and
+narratives are created and codified for different reasons,
+
+			<italic>Pentiment</italic> ultimately demonstrates the potential for
+historical games to embody deconstructionist historical approaches.
+However, this is complicated by considering that even when a game like
+
+			<italic>Pentiment</italic> tries to offer a more nuanced understanding
+of history’s relationship with the past, the promotion and critical
+reception of the game do not shed certain kinds of baggage. Namely, a
+game is still judged and positioned amid claims of authenticity,
+ultimately appealing to a broader sense that there is a past to be
+reconstructed. There are clear declarations made—by different
+agents—about an interpretation based on facts, an attempt (however in
+vain) to approach some kind of truth about the past, and the critical
+response to the game conferred authority on the developer to do so in a
+way that seemed believable. As Sawyer explained, “we tried to make it as
+accurate as possible … while also understanding we are making a
+fictional story to kind of illuminate the truth of the of the time
+period.”
+			<xref ref-type="fn" rid="fn102">102</xref> There is an inherent
+tension then between what we might read as deconstructionist and
+reconstructionist intentions and impulses and how they guide both design
+decisions and the creation of marketing discourses.
+		</p>
+		<p>This is therefore a paradox of historical video games—that they still
+need to trade on the currency of their claimed authenticity to assert
+their worth, despite attempts to move more thoughtfully beyond what is
+usually expected of a mainstream game’s engagement with the past. To do
+so, competing kinds of history are mobilized, deployed, and layered on
+top of each other, in the hope that the game will be perceived by
+potential players as a valuable engagement worth their investment—to
+play in the version of the past that, with all of its limitations, a
+developer has
+(de)constructed.
+			<xref ref-type="fn" rid="fn103">103</xref>
+		</p>
+		<p>
+			<bold>Esther Wright</bold> is a senior lecturer in digital history at
+Cardiff University. She is the author of 
+			<italic>Rockstar</italic>
+			<italic>Games</italic>
+			<italic>and</italic>
+			<italic>American</italic>
+			<italic>History:</italic>
+			<italic>Promotional</italic>
+			<italic>Materials</italic>
+			<italic>and</italic>
+			<italic>the</italic>
+			<italic>Construction</italic>
+			<italic>of</italic>
+			<italic>Authenticity</italic> (De Gruyter, 2022), and coeditor (with
+John Wills) of 
+			<italic>Red</italic>
+			<italic>Dead</italic>
+			<italic>Redemption:</italic>
+			<italic>History,</italic>
+			<italic>Myth</italic>
+			<italic>and</italic>
+			<italic>Violence</italic>
+			<italic>in</italic>
+			<italic>the</italic>
+			<italic>Video</italic>
+			<italic>Game</italic>
+			<italic>West</italic> (Oklahoma University Press,
+2023).
+		</p>
+		<p>
+			<bold>Notes</bold>
+		</p>
+    </sec>
+	</body>
+	<back>
+		<fn-group>
+			<fn id="fn1">
+				<label>1</label>
+				<p>Obsidian Entertainment, “Pentiment—Official
+    Launch Trailer,” November 14, 2022, YouTube video, 1:31,
+    
+					<ext-link ext-link-type="uri" xlink:href="https://www.youtube.com/watch?v=OfYryKWkNfw">External Resource</ext-link>.
+				</p>
+			</fn>
+			<fn id="fn2">
+				<label>2</label>
+				<p>Jordan Ramée, “Pentiment Review—Layers Of
+    History,” GameSpot, November 14, 2022,
+    https://www.gamespot.com/reviews/pentiment-review-layers-of-history/1900-6417998.</p>
+			</fn>
+			<fn id="fn3">
+				<label>3</label>
+				<p>National Gallery, “Glossary,” s.v. “pentimento,”
+    accessed May 25, 2024,
+    
+					<ext-link ext-link-type="uri" xlink:href="https://www.nationalgallery.org.uk/paintings/glossary/pentimento">External Resource</ext-link>.
+				</p>
+			</fn>
+			<fn id="fn4">
+				<label>4</label>
+				<p>Adam Chapman, 
+					<italic>Digital</italic>
+					<italic>Games</italic>
+					<italic>as</italic>
+					<italic>History:</italic>
+					<italic>How</italic>
+					<italic>Videogames</italic>
+					<italic>Represent</italic>
+					<italic>the</italic>
+					<italic>Past</italic>
+					<italic>and</italic>
+					<italic>Offer</italic>
+					<italic>Access</italic>
+					<italic>to</italic>
+					<italic>Historical</italic>
+					<italic>Practice</italic> (New York:
+    Routledge, 2016), 61–68, 81. For more on this historiographical
+    approach regarding games, see Tara Jane Copplestone, “But That’s Not
+    Accurate: The Differing Perceptions of Accuracy in Cultural-Heritage
+    Videogames between Creators, Consumers and Critics,”
+    
+					<italic>Rethinking</italic>
+					<italic>History</italic> 21, no. 3
+    (2017): 417–20; and Manuel Alejandro Cruz Martinez, “The Potential
+    of Video Games for Exploring Deconstructionist History” (PhD diss.,
+    University of Sussex, 2020),
+    http://sro.sussex.ac.uk/id/eprint/90194.
+				</p>
+			</fn>
+			<fn id="fn5">
+				<label>5</label>
+				<p>“Gemalte und gedruckte querverweise—Stimmen aus
+    dem AKGWDS zu ‘Pentiment,’” 
+					<italic>Gespielt</italic> (blog), April
+    19, 2023,
+    
+					<ext-link ext-link-type="uri" xlink:href="https://gespielt.hypotheses.org/5490">External Resource</ext-link>.
+				</p>
+			</fn>
+			<fn id="fn6">
+				<label>6</label>
+				<p>For recent disciplinary discussion of this, see
+    Suzannah Lipscomb and Helen Carr, eds., 
+					<italic>What</italic>
+					<italic>Is</italic>
+					<italic>History</italic>
+					<italic>Now?</italic>
+					<italic>How</italic>
+					<italic>the</italic>
+					<italic>Past</italic>
+					<italic>and</italic>
+					<italic>Present</italic>
+					<italic>Speak</italic>
+					<italic>to</italic>
+					<italic>Each</italic>
+					<italic>Other</italic>
+    (London: Orion Publishing House, 2021).
+				</p>
+			</fn>
+			<fn id="fn7">
+				<label>7</label>
+				<p>E. H. Carr, 
+					<italic>What</italic>
+					<italic>Is</italic>
+					<italic>History?</italic> (London: Penguin
+    Books, 1990), 20–22, 24–26. See also Helen Carr and Suzannah
+    Lipscomb, “Prologue: Ways,” in Lipscomb and Carr,
+    
+					<italic>What</italic>
+					<italic>Is</italic>
+					<italic>History</italic>
+					<italic>Now?</italic>.
+				</p>
+			</fn>
+			<fn id="fn8">
+				<label>8</label>
+				<p>For discussion of various games, see Emil
+    Lundedal Hammar, “Counter-Hegemonic Commemorative Play: Marginalized
+    Pasts and the Politics of Memory in the Digital Game Assassin’s
+    Creed: Freedom Cry,” 
+					<italic>Rethinking</italic>
+					<italic>History</italic> 21, no. 3 (2017): 5; Esther Wright,
+    
+					<italic>Rockstar</italic>
+					<italic>Games</italic>
+					<italic>and</italic>
+					<italic>American</italic>
+					<italic>History:</italic>
+					<italic>Promotional</italic>
+					<italic>Materials</italic>
+					<italic>and</italic>
+					<italic>the</italic>
+					<italic>Construction</italic>
+					<italic>of</italic>
+					<italic>Authenticity</italic> (Berlin: De Gruyter, 2022); Pieter J.
+    B. J. Van Den Heede, “Experience the Second World War ‘Like Never
+    Before!’: Game Paratextuality between Transnational Branding and
+    Informal Learning,” 
+					<italic>Journal</italic>
+					<italic>for</italic>
+					<italic>the</italic>
+					<italic>Study</italic>
+					<italic>of</italic>
+					<italic>Education</italic>
+					<italic>and</italic>
+					<italic>Development:</italic>
+					<italic>Infancia</italic>
+					<italic>y</italic>
+					<italic>Aprendizje</italic>, July 31, 2020,
+    https://www.tandfonline.com/doi/full/10.1080/02103702.2020.1771964;
+    and Pieter J. B. J. Van Den Heede, “Replaying Wartime Résistance?
+    Studying Ludic Memory-Making in the Open World Game
+    
+					<italic>The</italic>
+					<italic>Saboteur</italic>,”
+    
+					<italic>Games</italic>
+					<italic>and</italic>
+					<italic>Culture</italic>
+    19, no. 2 (2024): 178–98.
+				</p>
+			</fn>
+			<fn id="fn9">
+				<label>9</label>
+				<p>See, for example, Adrienne Shaw, “The Tyranny of
+    Realism: Historical Accuracy and Politics of Representation in
+    Assassin’s Creed III,” in “Game Studies in Media Res,” ed. Michael
+    Hancock and Steve Wilcox, special issue, 
+					<italic>Loading…</italic>
+    9, no. 14 (2015): 4–24; Copplestone, “‘But That’s Not Accurate’”;
+    Eve Stirling and Jamie Wood, “’Actual History Doesn’t Take Placeʼ:
+    Digital Gaming, Accuracy and Authenticity,” 
+					<italic>Game</italic>
+					<italic>Studies</italic> 21, no. 1 (2021),
+    http://gamestudies.org/2101/articles/stirling_wood; Jacqueline
+    Burgess and Christian Jones, “Exploring Player Understandings of
+    Historical Accuracy and Historical Authenticity in Video Games,”
+    
+					<italic>Games</italic>
+					<italic>and</italic>
+					<italic>Culture</italic>
+    17, no. 5 (2022): 816–35; and Esther Wright, “Still Playing with the
+    Past: History, Historians, and Digital Games,”
+    
+					<italic>History</italic>
+					<italic>&amp;</italic>
+					<italic>Theory</italic> 61, no. 4 (2022): 166–77.
+				</p>
+			</fn>
+			<fn id="fn10">
+				<label>10</label>
+				<p>Richard A. Peterson, “In Search of
+    Authenticity,” 
+					<italic>Journal</italic>
+					<italic>of</italic>
+					<italic>Management</italic>
+					<italic>Studies</italic> 42, no. 5
+    (2005): 1083–98. For application within game studies, see Jesper
+    Juul, 
+					<italic>Handmade</italic>
+					<italic>Pixels:</italic>
+					<italic>Independent</italic>
+					<italic>Video</italic>
+					<italic>Games</italic>
+					<italic>and</italic>
+					<italic>the</italic>
+					<italic>Quest</italic>
+					<italic>for</italic>
+					<italic>Authenticity</italic> (Cambridge, MA: MIT Press, 2019).
+				</p>
+			</fn>
+			<fn id="fn11">
+				<label>11</label>
+				<p>Nick Tan, “Pentiment Review: God Willing,”
+    ShackNews, November 14, 2022,
+    https://www.shacknews.com/article/133113/pentiment-review-score.</p>
+			</fn>
+			<fn id="fn12">
+				<label>12</label>
+				<p>Esther Wright, “Paratexts, ‘Authenticity,’ and
+    the Margins of (Digital) Game History,” in 
+					<italic>(Not)</italic>
+					<italic>in</italic>
+					<italic>the</italic>
+					<italic>Game:</italic>
+					<italic>History,</italic>
+					<italic>Paratexts,</italic>
+					<italic>Games</italic>, ed. Regina Seiwald and Ed Vollans (Berlin:
+    Dr Gruyter, 2023), 33–53.
+				</p>
+			</fn>
+			<fn id="fn13">
+				<label>13</label>
+				<p>Wright, “Paratexts,” 47.</p>
+			</fn>
+			<fn id="fn14">
+				<label>14</label>
+				<p>Wright, 47.</p>
+			</fn>
+			<fn id="fn15">
+				<label>15</label>
+				<p>Wright, 47.</p>
+			</fn>
+			<fn id="fn16">
+				<label>16</label>
+				<p>Wright, 47.</p>
+			</fn>
+			<fn id="fn17">
+				<label>17</label>
+				<p>See, for example, Hammar, “Counter-Hegemonic”;
+    and Tom Apperley, “Counterfactual Communities: Strategy Games,
+    Paratexts and the Player’s Experience of History,” Open Library of
+    Humanities 4, no. 1 (2018),
+    https://olh.openlibhums.org/articles/10.16995/olh.286/; Esther
+    Wright, “On the Promotional Context of Historical Video Games,”
+    
+					<italic>Rethinking</italic>
+					<italic>History</italic> 22, no. 4
+    (2018): 598–608; Van Den Heede, “Experience the Second World War”;
+    chapters in Histories section by Benjamin Beil, Suvik Mukherjee,
+    Richard Cole and René Glas in 
+					<italic>Paratextualizing</italic>
+					<italic>Games:</italic>
+					<italic>Investigations</italic>
+					<italic>on</italic>
+					<italic>the</italic>
+					<italic>Paraphernalia</italic>
+					<italic>and</italic>
+					<italic>Peripheries</italic>
+					<italic>of</italic>
+					<italic>Play</italic>, ed. Benjamin Beil, Gundolf S. Freyermuth, and
+    Hans Christian Schmidt (n.p.: Transcript, 2021), 55–164; Van Den
+    Heede, “Replaying Wartime Résistance?”; and Seiwald and Vollans,
+    
+					<italic>(Not)</italic>
+					<italic>in</italic>
+					<italic>the</italic>
+					<italic>Game</italic>.
+				</p>
+			</fn>
+			<fn id="fn18">
+				<label>18</label>
+				<p>Especially the critical reviews published on or
+    just after November 14, 2022, which seems to have been the review
+    embargo date.</p>
+			</fn>
+			<fn id="fn19">
+				<label>19</label>
+				<p>Wright, 
+					<italic>Rockstar</italic>
+					<italic>Games</italic>, 106.
+				</p>
+			</fn>
+			<fn id="fn20">
+				<label>20</label>
+				<p>Martin Barker, “News, Reviews, Clues, Interviews
+    and Other Ancillary Materials—A Critique and Research Proposal,”
+    
+					<italic>Scope</italic>, February 2004,
+    http://www.nottingham.ac.uk/scope/documents/2004/february-2004/barker.pdf;
+    Jonathan Gray, 
+					<italic>Show</italic>
+					<italic>Sold</italic>
+					<italic>Separately:</italic>
+					<italic>Promos,</italic>
+					<italic>Spoilers,</italic>
+					<italic>and</italic>
+					<italic>Other</italic>
+					<italic>Media</italic>
+					<italic>Paratexts</italic> (New York: New York University Press,
+    2010); and Jason Mittell, 
+					<italic>Complex</italic>
+					<italic>TV:</italic>
+					<italic>The</italic>
+					<italic>Poetics</italic>
+					<italic>of</italic>
+					<italic>Contemporary</italic>
+					<italic>Television</italic>
+					<italic>Storytelling</italic> (New York:
+    New York University Press, 2015).
+				</p>
+			</fn>
+			<fn id="fn21">
+				<label>21</label>
+				<p>Ed Vollans, “[Para]Textually Here: Paratexts and
+    Presence in Games—How Paratexts Extend the Game’s Network,” in Beil,
+    Freyermuth, and Schmidt, 
+					<italic>Paratextualizing</italic>
+					<italic>Games</italic>, 320.
+				</p>
+			</fn>
+			<fn id="fn22">
+				<label>22</label>
+				<p>Barker, “News.”</p>
+			</fn>
+			<fn id="fn23">
+				<label>23</label>
+				<p>Annika Rockenberger, “Video Game Framings,” in
+    
+					<italic>Examining</italic>
+					<italic>Paratextual</italic>
+					<italic>Theory</italic>
+					<italic>and</italic>
+					<italic>Its</italic>
+					<italic>Applications</italic>
+					<italic>in</italic>
+					<italic>Digital</italic>
+					<italic>Culture</italic>, ed. Nadine
+    Desrochers and Daniel Apollon (Hershey, PA: Information Science
+    Reference, 2014), 263.
+				</p>
+			</fn>
+			<fn id="fn24">
+				<label>24</label>
+				<p>Mia Consalvo, “When Paratexts Become Texts:
+    De-Centering the Game-as-Text,” 
+					<italic>Critical</italic>
+					<italic>Studies</italic>
+					<italic>in</italic>
+					<italic>Media</italic>
+					<italic>Communication</italic> 34 no. 2 (2017): 177–83.
+				</p>
+			</fn>
+			<fn id="fn25">
+				<label>25</label>
+				<p>Mia Consalvo, 
+					<italic>Cheating:</italic>
+					<italic>Gaining</italic>
+					<italic>Advantage</italic>
+					<italic>in</italic>
+					<italic>Videogames</italic> (Cambridge, MA: MIT
+    Press, 2007), 176.
+				</p>
+			</fn>
+			<fn id="fn26">
+				<label>26</label>
+				<p>Phil Iwaniuk, “Pentiment Review—A Holy Roman
+    Quagmire,” PCGamesN, November 14, 2022,
+    https://www.pcgamesn.com/pentiment/review.</p>
+			</fn>
+			<fn id="fn27">
+				<label>27</label>
+				<p>Clara Fernández-Vara,
+    
+					<italic>Introduction</italic>
+					<italic>to</italic>
+					<italic>Game</italic>
+					<italic>Analysis</italic> (New York:
+    Routledge, 2015), 64.
+				</p>
+			</fn>
+			<fn id="fn28">
+				<label>28</label>
+				<p>Leora Hadas, 
+					<italic>Authorship</italic>
+					<italic>as</italic>
+					<italic>Promotional</italic>
+					<italic>Discourse</italic>
+					<italic>in</italic>
+					<italic>the</italic>
+					<italic>Screen</italic>
+					<italic>Industries:</italic>
+					<italic>Selling</italic>
+					<italic>Genius</italic> (New York:
+    Routledge, 2020), 11; see also Wright, 
+					<italic>Rockstar</italic>
+					<italic>Games</italic>, 104–7.
+				</p>
+			</fn>
+			<fn id="fn29">
+				<label>29</label>
+				<p>Nick Webber, “The Past as (Para)Text—Relating
+    Histories of Game Experience to Games as Texts,” in Seiwald and
+    Vollans, 
+					<italic>(Not)</italic>
+					<italic>in</italic>
+					<italic>the</italic>
+					<italic>Game</italic>, 90–94.
+				</p>
+			</fn>
+			<fn id="fn30">
+				<label>30</label>
+				<p>Obsidian Entertainment, “Behind the Scenes of
+    Pentiment—Behind the Ink,” November 11, 2022, YouTube video, 9:58,
+    
+					<ext-link ext-link-type="uri" xlink:href="https://www.youtube.com/watch?v=AjIfxeNhrj4&amp;t=1s">External Resource</ext-link>.
+				</p>
+			</fn>
+			<fn id="fn31">
+				<label>31</label>
+				<p>Robert Purchese, “Obsidian Is Surprise-Dropping
+    Brand New Game Pentiment This November,” Eurogamer, June 12, 2022,
+    https://www.eurogamer.net/obsidian-is-surprise-dropping-brand-new-game-pentiment-this-november.</p>
+			</fn>
+			<fn id="fn32">
+				<label>32</label>
+				<p>Tan, “Pentiment Review”; Eric Van Allen,
+    “Obsidian’s Pentiment Brings History to the Fore for Its Adventure,”
+    Destructoid, August 24, 2022,
+    
+					<ext-link ext-link-type="uri" xlink:href="https://www.destructoid.com/pentiment-preview-impressions-november-obsidian-history-art-xbox">External Resource</ext-link>;
+    and Hannah Kennedy, “Deep Dive: Behind the Evocative Medieval
+    Manuscript Art of 
+					<italic>Pentiment</italic>,” Game Developer,
+    January 25, 2023,
+    
+					<ext-link ext-link-type="uri" xlink:href="https://www.gamedeveloper.com/art/deep-dive-the-art-of-pentiment">External Resource</ext-link>.
+    See also Will Bedingfield, “
+					<italic>Pentiment</italic>’s Director
+    Wants You to Know How His Characters Ate,” 
+					<italic>Wired</italic>,
+    November 17, 2022,
+    https://www.wired.com/story/pentiment-josh-sawyer-interview/.
+				</p>
+			</fn>
+			<fn id="fn33">
+				<label>33</label>
+				<p>Bedingfield, “
+					<italic>Pentiment</italic>’s
+    Director.”
+				</p>
+			</fn>
+			<fn id="fn34">
+				<label>34</label>
+				<p>Obsidian Entertainment, “Behind the Ink.”</p>
+			</fn>
+			<fn id="fn35">
+				<label>35</label>
+				<p>Jay Castello, “Obsidian’s Murder Mystery
+    Pentiment Is Full of Tough, Fallout-Style Choices,” Polygon,
+    November 14, 2022,
+    https://www.polygon.com/reviews/23453772/pentiment-review-game-pass-obsidian-rpg-pc-xbox-one-series-x.
+    See also Michael McWhertor, “Obsidian Reveals New RPG Pentiment from
+    Fallout: New Vegas Director,” Polygon, June 12, 2022,
+    https://www.polygon.com/23164819/obsidian-entertainment-pentiment-game-rpg-josh-sawyer-xbox-pc.</p>
+			</fn>
+			<fn id="fn36">
+				<label>36</label>
+				<p>Castello, “Obsidian’s Murder Mystery.”</p>
+			</fn>
+			<fn id="fn37">
+				<label>37</label>
+				<p>Drew Swanson, “How Pentiment’s Underlying Themes
+    Mirror Pillars of Eternity,” GameRant, January 3, 2023,
+    
+					<ext-link ext-link-type="uri" xlink:href="https://gamerant.com/pentiment-themes-pillars-of-eternity-similar-obsidian-entertainment">External Resource</ext-link>;
+    and Kyle LeClair, “Review: Pentiment,” Hardcore Gamer, November 14,
+    2022, https://hardcoregamer.com/reviews/review-pentiment/430110.
+				</p>
+			</fn>
+			<fn id="fn38">
+				<label>38</label>
+				<p>Rebekah Valentine, “What Is Obsidian’s
+    Pentiment?,” IGN, June 12, 2022,
+    https://www.ign.com/articles/what-is-obsidian-pentiment.</p>
+			</fn>
+			<fn id="fn39">
+				<label>39</label>
+				<p>LeClair, “Review: Pentiment.”</p>
+			</fn>
+			<fn id="fn40">
+				<label>40</label>
+				<p>Jim Trinca, “Pentiment Review: A Wonderful
+    Tapestry of Historical Intrigue, and a Welcome Treat for Game Pass
+    Users,” VG247, November 14, 2022,
+    https://www.vg247.com/pentiment-review.</p>
+			</fn>
+			<fn id="fn41">
+				<label>41</label>
+				<p>Tan, “Pentiment Review.”</p>
+			</fn>
+			<fn id="fn42">
+				<label>42</label>
+				<p>Tan.</p>
+			</fn>
+			<fn id="fn43">
+				<label>43</label>
+				<p>Iwaniuk, “Pentiment Review.”</p>
+			</fn>
+			<fn id="fn44">
+				<label>44</label>
+				<p>Juul, 
+					<italic>Handmade</italic>
+					<italic>Pixels</italic>, 5–7.
+				</p>
+			</fn>
+			<fn id="fn45">
+				<label>45</label>
+				<p>For discussion of the more subversive role the
+    notion of the player-historian might play in understanding how games
+    make meaning from the past and “offer access to historical
+    practice,” see Chapman, 
+					<italic>Digital</italic>
+					<italic>Games</italic>
+					<italic>as</italic>
+					<italic>History</italic>.
+				</p>
+			</fn>
+			<fn id="fn46">
+				<label>46</label>
+				<p>Matt Booty, “Obsidian and inXile Join Microsoft
+    Studios,” 
+					<italic>Xbox</italic>
+					<italic>Wire</italic> (blog),
+    November 10, 2018,
+    https://news.xbox.com/en-us/2018/11/10/obsidian-inxile-join-microsoft-studios.
+				</p>
+			</fn>
+			<fn id="fn47">
+				<label>47</label>
+				<p>Noelle Warner, “Pentiment Is the Breath of Fresh
+    Air That Games Desperately Needed,” Destructoid, January 12, 2023,
+    https://www.destructoid.com/pentiment-is-the-breath-of-fresh-air-that-games-desperately-needed.</p>
+			</fn>
+			<fn id="fn48">
+				<label>48</label>
+				<p>Iwaniuk, “Pentiment Review.”</p>
+			</fn>
+			<fn id="fn49">
+				<label>49</label>
+				<p>Jon Bailes, “Pentiment Review: ‘It’s like
+    Scampering Around inside a 16th Century Comic Book,’” GamesRadar,
+    November 14, 2022, https://www.gamesradar.com/pentiment-review.</p>
+			</fn>
+			<fn id="fn50">
+				<label>50</label>
+				<p>For example, see Wright,
+    
+					<italic>Rockstar</italic>
+					<italic>Games</italic>, 68–102.
+				</p>
+			</fn>
+			<fn id="fn51">
+				<label>51</label>
+				<p>Ylva Grufstedt, 
+					<italic>Shaping</italic>
+					<italic>the</italic>
+					<italic>Past:</italic>
+					<italic>Counterfactual</italic>
+					<italic>History</italic>
+					<italic>and</italic>
+					<italic>Game</italic>
+					<italic>Design</italic>
+					<italic>Practice</italic>
+					<italic>in</italic>
+					<italic>Digital</italic>
+					<italic>Strategy</italic>
+					<italic>Games</italic> (Berlin: De Gruyter, 2022), 5. On varied
+    source materials, see also Chris Kempshall, “War Collaborators:
+    Documentary and Historical Sources in First World War Computer
+    Games,” 
+					<italic>First</italic>
+					<italic>World</italic>
+					<italic>War</italic>
+					<italic>Studies</italic> 10, no. 2–3 (2020):
+    225–44.
+				</p>
+			</fn>
+			<fn id="fn52">
+				<label>52</label>
+				<p>Bailes, “Pentiment Review”; Trinca, “Pentiment
+    Review”; and Iwaniuk, “Pentiment Review.”</p>
+			</fn>
+			<fn id="fn53">
+				<label>53</label>
+				<p>Trinca, “Pentiment Review.”</p>
+			</fn>
+			<fn id="fn54">
+				<label>54</label>
+				<p>For example, see Bedingfield,
+    “
+					<italic>Pentiment</italic>’s Director”; Rebekah Valentine, “How
+    Obsidian’s Latest Game Is Inspired by a Medieval Theory about God
+    and Worms,” IGN, updated November 18, 2022,
+    https://www.ign.com/articles/how-obsidians-latest-game-is-inspired-by-a-medieval-theory-about-god-and-worms;
+    and Austin Suther, “Exploring the Protestant Reformation and History
+    in Pentiment,” Techraptor, January 9, 2023,
+    https://techraptor.net/gaming/features/exploring-protestant-reformation-history-in-pentiment.
+				</p>
+			</fn>
+			<fn id="fn55">
+				<label>55</label>
+				<p>Valentine, “How Obsidian’s Latest Game.” For
+    further discussion of 
+					<italic>Darklands</italic>’s historical
+    aspects, research, and fan communities, see, for example, Alexander
+    von Lünen, “Ye Olde FAQ: The 
+					<italic>Darklands</italic> Game,
+    Immersiveness and Fan Fiction,” in 
+					<italic>Historia</italic>
+					<italic>Ludens:</italic>
+					<italic>The</italic>
+					<italic>Playing</italic>
+					<italic>Historian</italic>, ed. Alexander
+    von Lünen et al. (New York: Routledge, 2020), 213–15.
+				</p>
+			</fn>
+			<fn id="fn56">
+				<label>56</label>
+				<p>Bedingfield, “
+					<italic>Pentiment</italic>’s
+    Director.”
+				</p>
+			</fn>
+			<fn id="fn57">
+				<label>57</label>
+				<p>Juul, 
+					<italic>Handmade</italic>
+					<italic>Pixels</italic>, 7–8.
+				</p>
+			</fn>
+			<fn id="fn58">
+				<label>58</label>
+				<p>Valentine, “How Obsidian’s Latest Game.”</p>
+			</fn>
+			<fn id="fn59">
+				<label>59</label>
+				<p>Mike Nelson, “A Recommended Reading List of Late
+    Medieval History from Pentiment Game Director Josh Sawyer,”
+    
+					<italic>Xbox</italic>
+					<italic>Wire</italic> (blog), November 10,
+    2022,
+    https://news.xbox.com/en-us/2022/11/10/recommended-reading-of-medieval-history-from-josh-sawyer.
+    For wider interest in Hendrick’s approach to historical research and
+    game development, see, for example, Matt Barton and Arnold J.
+    Hendrick, “Arnold Hendrick on 
+					<italic>Darklands</italic>,” in Von
+    Lünen et al., 
+					<italic>Historia</italic>
+					<italic>Ludens</italic>,
+    228–39.
+				</p>
+			</fn>
+			<fn id="fn60">
+				<label>60</label>
+				<p>Nelson, “A Recommended Reading List.”</p>
+			</fn>
+			<fn id="fn61">
+				<label>61</label>
+				<p>Michael Goroff, “Pentiment Review,” EGM,
+    November 14, 2022, https://egmnow.com/pentiment-review/; Rob Zacny,
+    “A Medieval Murder Mystery Is Painted on History’s Canvas in
+    ‘Pentiment,’” 
+					<italic>Vice</italic>, November 15, 2022,
+    https://www.vice.com/en/article/n7z53g/pentiment-review; Bailes,
+    “Pentiment Review”; and Bedingfield, “
+					<italic>Pentiment</italic>’s
+    Director.”
+				</p>
+			</fn>
+			<fn id="fn62">
+				<label>62</label>
+				<p>Christian Donlan, “Pentiment Review—A 16th
+    Century Mystery That Blossoms with Intrigue and Human Warmth,”
+    Eurogamer, November 14, 2022,
+    https://www.eurogamer.net/pentiment-review-a-sixteenth-century-mystery-that-blossoms-with-intrigue-and-human-warmth.</p>
+			</fn>
+			<fn id="fn63">
+				<label>63</label>
+				<p>For an overview, see Thomas V. Cohen, “The
+    Macrohistory of Microhistory,” 
+					<italic>Journal</italic>
+					<italic>of</italic>
+					<italic>Medieval</italic>
+					<italic>and</italic>
+					<italic>Early</italic>
+					<italic>Modern</italic>
+					<italic>Studies</italic> 47, no. 1 (2017): 53–73.
+				</p>
+			</fn>
+			<fn id="fn64">
+				<label>64</label>
+				<p>Chapman, 
+					<italic>Digital</italic>
+					<italic>Games</italic>
+					<italic>as</italic>
+					<italic>History.</italic>
+				</p>
+			</fn>
+			<fn id="fn65">
+				<label>65</label>
+				<p>Nelson, “A Recommended Reading List.”</p>
+			</fn>
+			<fn id="fn66">
+				<label>66</label>
+				<p>Obsidian Entertainment, “Behind the Ink.”</p>
+			</fn>
+			<fn id="fn67">
+				<label>67</label>
+				<p>Valentine, “How Obsidian’s Latest Game.”</p>
+			</fn>
+			<fn id="fn68">
+				<label>68</label>
+				<p>For example, see Wright,
+    
+					<italic>Rockstar</italic>
+					<italic>Games</italic>, 68–102.
+				</p>
+			</fn>
+			<fn id="fn69">
+				<label>69</label>
+				<p>For example, see Bedingfield,
+    “
+					<italic>Pentiment</italic>’s Director”; and Suther, “Exploring the
+    Protestant Reformation.”
+				</p>
+			</fn>
+			<fn id="fn70">
+				<label>70</label>
+				<p>Valentine, “How Obsidian’s Latest Game.”</p>
+			</fn>
+			<fn id="fn71">
+				<label>71</label>
+				<p>Bedingfield, “
+					<italic>Pentiment</italic>’s
+    Director.”
+				</p>
+			</fn>
+			<fn id="fn72">
+				<label>72</label>
+				<p>Valentine, “How Obsidian’s Latest Game.”</p>
+			</fn>
+			<fn id="fn73">
+				<label>73</label>
+				<p>Wright, 
+					<italic>Rockstar</italic>
+					<italic>Games</italic>, 47–67.
+				</p>
+			</fn>
+			<fn id="fn74">
+				<label>74</label>
+				<p>Suther, “Exploring the Protestant
+    Reformation.”</p>
+			</fn>
+			<fn id="fn75">
+				<label>75</label>
+				<p>Zacny, “A Medieval Murder Mystery.”</p>
+			</fn>
+			<fn id="fn76">
+				<label>76</label>
+				<p>Castello, “Obsidian’s Murder Mystery.”</p>
+			</fn>
+			<fn id="fn77">
+				<label>77</label>
+				<p>Valentine, “How Obsidian’s Latest Game.” Sawyer
+    also alludes to the quotation in Bedingfield,
+    “
+					<italic>Pentiment</italic>’s Director.” For the original quotation,
+    see Hilary Mantel, “Hilary Mantel: Why I Bcame a Historical
+    Novelist,” June 3, 2017, 
+					<italic>Guardian</italic>,
+    https://www.theguardian.com/books/2017/jun/03/hilary-mantel-why-i-became-a-historical-novelist.
+				</p>
+			</fn>
+			<fn id="fn78">
+				<label>78</label>
+				<p>Valentine, “How Obsidian’s Latest Game.”</p>
+			</fn>
+			<fn id="fn79">
+				<label>79</label>
+				<p>Bedingfield, “
+					<italic>Pentiment</italic>’s
+    Director.”
+				</p>
+			</fn>
+			<fn id="fn80">
+				<label>80</label>
+				<p>Ramée, “Pentiment Review.”</p>
+			</fn>
+			<fn id="fn81">
+				<label>81</label>
+				<p>Donlan, “Pentiment Review.”</p>
+			</fn>
+			<fn id="fn82">
+				<label>82</label>
+				<p>Joshua Wolens, “Pentiment Review,”
+    
+					<italic>PC</italic>
+					<italic>Gamer</italic>, November 14, 2022,
+    https://www.pcgamer.com/pentiment-review.
+				</p>
+			</fn>
+			<fn id="fn83">
+				<label>83</label>
+				<p>Castello, “Obsidian’s Murder Mystery.”</p>
+			</fn>
+			<fn id="fn84">
+				<label>84</label>
+				<p>Zacny, “A Medieval Murder Mystery.”</p>
+			</fn>
+			<fn id="fn85">
+				<label>85</label>
+				<p>Chapman, 
+					<italic>Digital</italic>
+					<italic>Games</italic>
+					<italic>as</italic>
+					<italic>History</italic>,
+    66–69.
+				</p>
+			</fn>
+			<fn id="fn86">
+				<label>86</label>
+				<p>Obsidian Entertainment, “Behind the Ink.” The
+    idea that the game was preserving a particular art style can also be
+    found on the game’s official website under explanatory detail about
+    Art Style &amp; Animation, https://pentiment.obsidian.net.</p>
+			</fn>
+			<fn id="fn87">
+				<label>87</label>
+				<p>For example, as an interstitial used in the
+    game’s official launch trailer. See Obsidian Entertainment,
+    “Pentiment—Official Launch Trailer.”</p>
+			</fn>
+			<fn id="fn88">
+				<label>88</label>
+				<p>Chapman, 
+					<italic>Digital</italic>
+					<italic>Games</italic>
+					<italic>as</italic>
+					<italic>History</italic>,
+    66–67.
+				</p>
+			</fn>
+			<fn id="fn89">
+				<label>89</label>
+				<p>Trinca, “Pentiment Review”; and Goroff,
+    “Pentiment Review.”</p>
+			</fn>
+			<fn id="fn90">
+				<label>90</label>
+				<p>See application of this Barthesian concept in
+    Chapman, 
+					<italic>Digital</italic>
+					<italic>Games</italic>
+					<italic>as</italic>
+					<italic>History</italic>, 68.
+				</p>
+			</fn>
+			<fn id="fn91">
+				<label>91</label>
+				<p>Trinca, “Pentiment Review.”</p>
+			</fn>
+			<fn id="fn92">
+				<label>92</label>
+				<p>Leana Hafer, “Pentiment Review,” IGN, updated
+    November 18, 2022,
+    https://www.ign.com/articles/pentiment-review.</p>
+			</fn>
+			<fn id="fn93">
+				<label>93</label>
+				<p>Obsidian Entertainment, “Behind the Ink.”
+    Quotation from Wolens, “Pentiment Review.” See also Trinca,
+    “Pentiment Review”; Eric Van Allen, “Review: Pentiment,”
+    Destructioid, November 14, 2022,
+    https://www.destructoid.com/reviews/pentiment-review-pc-xbox-series-x-obsidian-microsoft;
+    and Iwaniuk, “Pentiment Review.”</p>
+			</fn>
+			<fn id="fn94">
+				<label>94</label>
+				<p>Wolens, “Pentiment Review.”</p>
+			</fn>
+			<fn id="fn95">
+				<label>95</label>
+				<p>Shyla Schofield, “Pentiment Soundtrack Available
+    Now, Vinyl Coming Next Year,” 
+					<italic>Xbox</italic>
+					<italic>Wire</italic> (blog), December 27, 2022,
+    https://news.xbox.com/en-us/2022/12/27/pentiment-soundtrack-vinyl.
+				</p>
+			</fn>
+			<fn id="fn96">
+				<label>96</label>
+				<p>Schofield, “Pentiment Soundtrack.”</p>
+			</fn>
+			<fn id="fn97">
+				<label>97</label>
+				<p>Barbara Klinger, “Digressions at the Cinema:
+    Reception and Mass Culture,” 
+					<italic>Cinema</italic>
+					<italic>Journal</italic> 28, no. 4 (1989): 3–19.
+				</p>
+			</fn>
+			<fn id="fn98">
+				<label>98</label>
+				<p>For the tendency to “fetishize authentic
+    artifacts such as paper books, vinyl albums,” see Russell Cobb,
+    “Introduction: The Artifice of Authenticity,” in
+    
+					<italic>The</italic>
+					<italic>Paradox</italic>
+					<italic>of</italic>
+					<italic>Authenticity</italic>
+					<italic>in</italic>
+					<italic>a</italic>
+					<italic>Globalized</italic>
+					<italic>World</italic>, ed. Russell Cobb
+    (New York: Palgrave Macmillan, 2014), 1–9; for vinyl and
+    authenticity, see Dominik Bartmanski and Ian Woodward, “The Vinyl:
+    The Analogue Medium in the Age of Digital Reproduction,”
+    
+					<italic>Journal</italic>
+					<italic>of</italic>
+					<italic>Consumer</italic>
+					<italic>Culture</italic> 15, no. 1 (2015):
+    3–27; and Christina Goulding and Maud Derbaix, “Consuming Material
+    Authenticity in the Age of Digital Reproduction,”
+    
+					<italic>European</italic>
+					<italic>Journal</italic>
+					<italic>of</italic>
+					<italic>Marketing</italic> 53, no. 3 (2019):
+    545–64.
+				</p>
+			</fn>
+			<fn id="fn99">
+				<label>99</label>
+				<p>See also Juul, 
+					<italic>Handmade</italic>
+					<italic>Pixels</italic>, 48.
+				</p>
+			</fn>
+			<fn id="fn100">
+				<label>100</label>
+				<p>Chapman, 
+					<italic>Digital</italic>
+					<italic>Games</italic>
+					<italic>as</italic>
+					<italic>History</italic>,
+    81.
+				</p>
+			</fn>
+			<fn id="fn101">
+				<label>101</label>
+				<p>For example, see Dawn Spring, “Gaming History:
+    Computer and Video Games as Historical Scholarship,”
+    
+					<italic>Rethinking</italic>
+					<italic>History</italic> 19, no. 2
+    (2015): 207–21; and Julien A. Bazile, “An ‘Alternative to the Pen’?
+    Perspectives for the Design of Historiographical Videogames,”
+    
+					<italic>Games</italic>
+					<italic>and</italic>
+					<italic>Culture</italic>
+    17, no. 6 (September 2022): 855–70.
+				</p>
+			</fn>
+			<fn id="fn102">
+				<label>102</label>
+				<p>Suther, “Exploring the Protestant
+    Reformation.”</p>
+			</fn>
+			<fn id="fn103">
+				<label>103</label>
+				<p>Another one</p>
+			</fn>
+		</fn-group>
+	</back>
+</article>
