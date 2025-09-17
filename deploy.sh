@@ -44,7 +44,7 @@ sudo chown www-data:www-data /var/log/converter-app
 
 # Copy application files (assuming this script is run from the app directory)
 echo "📋 Copying application files..."
-sudo cp -r . /var/www/html/converter-app/
+sudo cp -Rf . /var/www/html/converter-app/
 sudo chown -R www-data:www-data /var/www/html/converter-app
 
 # Verify critical files and directories

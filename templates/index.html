@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>DOCX to JATS Converter</title>
+    <title>DOCX to JATS XML Converter</title>
     <style>
         body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
         .form-group { margin-bottom: 15px; }
@@ -25,10 +25,12 @@
         </div>
         
         <div class="form-group" id="conversion-options" style="display: none;">
-            <label for="convert-to-jats">
-                <input type="checkbox" id="convert-to-jats" name="convert-to-jats">
-                Convert to JATS XML (for DOCX files only)
-            </label>
+            <div id="docx-options">
+                <label for="convert-to-jats">
+                    <input type="checkbox" id="convert-to-jats" name="convert-to-jats">
+                    Convert to JATS XML (for DOCX files only)
+                </label>
+            </div>
             <p id="conversion-info" style="font-size: 0.9em; color: #666; margin-top: 5px;"></p>
         </div>
         
@@ -39,6 +41,7 @@
     function updateConversionOptions() {
         const fileInput = document.getElementById('document');
         const conversionOptions = document.getElementById('conversion-options');
+        const docxOptions = document.getElementById('docx-options');
         const convertToJats = document.getElementById('convert-to-jats');
         const conversionInfo = document.getElementById('conversion-info');
         
@@ -47,11 +50,13 @@
             
             if (fileName.endsWith('.docx')) {
                 conversionOptions.style.display = 'block';
+                docxOptions.style.display = 'block';
                 convertToJats.disabled = false;
-                conversionInfo.textContent = 'DOCX will be converted to Markdown. Check the box to also convert to JATS XML.';
+                convertToJats.checked = false;
+                conversionInfo.textContent = 'Check the box to convert to JATS XML directly from DOCX. If unchecked, DOCX will be converted to Markdown.';
             } else if (fileName.endsWith('.md')) {
                 conversionOptions.style.display = 'block';
-                convertToJats.disabled = true;
+                docxOptions.style.display = 'none';
                 convertToJats.checked = true;
                 conversionInfo.textContent = 'Markdown will be converted to JATS XML.';
             } else {
