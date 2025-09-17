@@ -179,18 +179,55 @@ def remove_image_dimensions(content: str) -> str:
     return content
 
 
+def standardize_image_filename(filename: str) -> str:
+    """
+    Standardize image filenames by:
+    1. Converting extensions to lowercase
+    2. Standardizing jpeg to jpg
+    3. Converting DOCX pattern (image1, image2) to figure pattern (figure-1, figure-2)
+    
+    Args:
+        filename: The original filename to standardize
+        
+    Returns:
+        The standardized filename
+    """
+    # Split filename and extension
+    name, ext = os.path.splitext(filename)
+    
+    # Convert extension to lowercase
+    ext = ext.lower()
+    
+    # Standardize jpeg to jpg
+    if ext == '.jpeg':
+        ext = '.jpg'
+    
+    # Handle DOCX image naming pattern (image1, image2, etc.)
+    # Match patterns like: image1, image2, image10, etc.
+    image_pattern = r'^image(\d+)$'
+    match = re.match(image_pattern, name, re.IGNORECASE)
+    
+    if match:
+        # Convert image1 -> figure-1, image2 -> figure-2, etc.
+        number = match.group(1)
+        name = f'figure-{number}'
+    
+    return f'{name}{ext}'
+
+
 def process_image_links_to_basename(content: str) -> str:
     """
-    Process image links in markdown to use only the basename (filename without path).
+    Process image links in markdown to use only the basename (filename without path)
+    and standardize the filenames.
     
-    This converts image references like ![alt](media/image1.png) to ![alt](image1.png)
-    for OJS compatibility where file paths are handled directly.
+    This converts image references like ![alt](media/image1.png) to ![alt](figure-1.png)
+    for OJS compatibility where file paths are handled directly and filenames are standardized.
     
     Args:
         content: The markdown content to process
         
     Returns:
-        The content with image links converted to basename only
+        The content with image links converted to basename only and standardized
     """
     # Pattern to match markdown image links: ![alt text](path/to/image.ext)
     # This captures the alt text and the full path, then extracts just the basename
@@ -203,7 +240,10 @@ def process_image_links_to_basename(content: str) -> str:
         # Extract just the basename (filename with extension)
         basename = os.path.basename(image_path)
         
-        return f'![{alt_text}]({basename})'
+        # Standardize the filename
+        standardized_basename = standardize_image_filename(basename)
+        
+        return f'![{alt_text}]({standardized_basename})'
     
     # Apply the image link processing
     content = re.sub(image_pattern, replace_image_link, content)
@@ -250,6 +290,8 @@ def parse_figures_for_jats(content: str) -> str:
         mime_subtype_match = re.search(r'mime-subtype="([^"]+)"', image_para)
         
         image_filename = href_match.group(1) if href_match else "image.png"
+        # Standardize the filename
+        image_filename = standardize_image_filename(image_filename)
         mime_subtype = mime_subtype_match.group(1) if mime_subtype_match else "png"
         
         # Generate unique IDs
@@ -430,7 +472,9 @@ def convert_docx_to_markdown(input_file: str, output_file: str) -> bool:
                 import shutil
                 for file in os.listdir(temp_media_dir):
                     src = os.path.join(temp_media_dir, file)
-                    dst = os.path.join(media_dir, file)
+                    # Standardize the filename
+                    standardized_filename = standardize_image_filename(file)
+                    dst = os.path.join(media_dir, standardized_filename)
                     shutil.move(src, dst)
                 
                 # Remove the temporary extraction directory
