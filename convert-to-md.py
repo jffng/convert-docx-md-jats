@@ -184,7 +184,6 @@ def standardize_image_filename(filename: str) -> str:
     Standardize image filenames by:
     1. Converting extensions to lowercase
     2. Standardizing jpeg to jpg
-    3. Converting DOCX pattern (image1, image2) to figure pattern (figure-1, figure-2)
     
     Args:
         filename: The original filename to standardize
@@ -204,13 +203,13 @@ def standardize_image_filename(filename: str) -> str:
     
     # Handle DOCX image naming pattern (image1, image2, etc.)
     # Match patterns like: image1, image2, image10, etc.
-    image_pattern = r'^image(\d+)$'
-    match = re.match(image_pattern, name, re.IGNORECASE)
+    # image_pattern = r'^image(\d+)$'
+    # match = re.match(image_pattern, name, re.IGNORECASE)
     
-    if match:
+    # if match:
         # Convert image1 -> figure-1, image2 -> figure-2, etc.
-        number = match.group(1)
-        name = f'figure-{number}'
+        # number = match.group(1)
+        # name = f'figure-{number}'
     
     return f'{name}{ext}'
 
