@@ -269,25 +269,22 @@ def parse_figures_for_jats(content: str) -> str:
         The content with figures converted to proper JATS XML format
     """
     # Pattern to match figure blocks in JATS XML:
-    # 1. A paragraph with <bold>Figure X</bold> (the label)
-    # 2. A paragraph with inline-graphic element and caption text
-    # This handles both structures:
-    # - <p><bold>Figure X</bold></p><p><inline-graphic>...</inline-graphic>caption</p>
-    # - <p><bold>Figure X</bold></p><p><inline-graphic>...</inline-graphic>caption text</p>
-    figure_pattern = r'(<p[^>]*>\s*<bold[^>]*>Figure\s+\d+</bold>\s*</p>)\s*(<p[^>]*>\s*<inline-graphic[^>]*>.*?</inline-graphic>(.*?)</p>)'
+    # Handles both single-paragraph and two-paragraph structures:
+    # - <p><bold>Figure X</bold> <inline-graphic>...</inline-graphic>caption</p> (single paragraph)
+    # - <p><bold>Figure X</bold></p><p><inline-graphic>...</inline-graphic>caption</p> (two paragraphs)
+    figure_pattern = r'(<p[^>]*>\s*<bold[^>]*>Figure\s+\d+</bold>\s*(?:</p>\s*<p[^>]*>\s*)?<inline-graphic[^>]*>.*?</inline-graphic>(.*?)</p>)'
     
     def replace_figure(match):
-        label_para = match.group(1)
-        image_para = match.group(2)
-        caption_text = match.group(3).strip()
+        full_para = match.group(1)
+        caption_text = match.group(2).strip()
         
         # Extract figure number from the label
-        label_match = re.search(r'<bold[^>]*>(Figure\s+\d+)</bold>', label_para)
+        label_match = re.search(r'<bold[^>]*>(Figure\s+\d+)</bold>', full_para)
         label = label_match.group(1) if label_match else "Figure"
         
         # Extract image information from inline-graphic element
-        href_match = re.search(r'xlink:href="([^"]+)"', image_para)
-        mime_subtype_match = re.search(r'mime-subtype="([^"]+)"', image_para)
+        href_match = re.search(r'xlink:href="([^"]+)"', full_para)
+        mime_subtype_match = re.search(r'mime-subtype="([^"]+)"', full_para)
         
         image_filename = href_match.group(1) if href_match else "image.png"
         # Standardize the filename
