@@ -269,11 +269,13 @@ def parse_figures_for_jats(content: str) -> str:
     """
     # Patterns to match figure blocks in JATS XML:
     # Pattern 1: Single paragraph structure: <p><bold>Figure X</bold> <inline-graphic ... />caption</p>
-    figure_pattern_single = r'(<p[^>]*>\s*<bold[^>]*>Figure\s+\d+</bold>\s*<inline-graphic[^>]*/>\s*(.*?)</p>)'
+    # Handles both self-closing and paired inline-graphic elements
+    figure_pattern_single = r'(<p[^>]*>\s*<bold[^>]*>Figure\s+\d+</bold>\s*<inline-graphic[^>]*(?:/>|>.*?</inline-graphic>)\s*(.*?)</p>)'
     
     # Pattern 2: Multi-paragraph structure: <p><bold>Figure X</bold></p>...<p><inline-graphic ... />caption</p>
     # This pattern matches from the figure label paragraph to the paragraph containing the inline-graphic
-    figure_pattern_multi = r'(<p[^>]*>\s*<bold[^>]*>Figure\s+\d+</bold>\s*</p>.*?<p[^>]*>\s*<inline-graphic[^>]*/>\s*(.*?)</p>)'
+    # Handles both self-closing and paired inline-graphic elements
+    figure_pattern_multi = r'(<p[^>]*>\s*<bold[^>]*>Figure\s+\d+</bold>\s*</p>.*?<p[^>]*>\s*<inline-graphic[^>]*(?:/>|>.*?</inline-graphic>)\s*(.*?)</p>)'
     
     def replace_figure(match):
         full_para = match.group(1)
