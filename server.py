@@ -49,7 +49,11 @@ file_handler.setFormatter(logging.Formatter(
 # Add the handlers to the logger
 logger.addHandler(file_handler)
 
-app = Flask(__name__)
+# Configure Flask app with appropriate static URL path
+if Config.is_production():
+    app = Flask(__name__, static_url_path='/docx-converter/static')
+else:
+    app = Flask(__name__)
 
 # Apply configuration
 app.config.update(Config.get_app_config())
@@ -99,6 +103,7 @@ def index():
     """Handle requests to /docx-converter/"""
     return render_template('index.html', 
                          form_action=Config.get_form_action(),
+                         static_url_prefix=Config.get_static_url_prefix(),
                          app_version=get_version_display(),
                          changelog_content=get_changelog_content())
 
@@ -110,6 +115,7 @@ def convert():
         if 'document' not in request.files:
             return render_template('index.html', 
                                 form_action=Config.get_form_action(),
+                                static_url_prefix=Config.get_static_url_prefix(),
                                 app_version=get_version_display(),
                                 changelog_content=get_changelog_content(),
                                 message="No file uploaded", error=True)
@@ -118,6 +124,7 @@ def convert():
         if file.filename == '':
             return render_template('index.html', 
                                 form_action=Config.get_form_action(),
+                                static_url_prefix=Config.get_static_url_prefix(),
                                 app_version=get_version_display(),
                                 changelog_content=get_changelog_content(),
                                 message="No file selected", error=True)
@@ -139,6 +146,7 @@ def convert():
         else:
             return render_template('index.html', 
                                 form_action=Config.get_form_action(),
+                                static_url_prefix=Config.get_static_url_prefix(),
                                 app_version=get_version_display(),
                                 changelog_content=get_changelog_content(),
                                 message="Unsupported file type. Please upload a .docx or .md file.", error=True)
@@ -185,6 +193,7 @@ def convert():
             else:
                 return render_template('index.html', 
                                     form_action=Config.get_form_action(),
+                                    static_url_prefix=Config.get_static_url_prefix(),
                                     app_version=get_version_display(),
                                     changelog_content=get_changelog_content(),
                                     message="Invalid format selected", error=True)
@@ -192,6 +201,7 @@ def convert():
             if not success:
                 return render_template('index.html', 
                                     form_action=Config.get_form_action(),
+                                    static_url_prefix=Config.get_static_url_prefix(),
                                     app_version=get_version_display(),
                                     changelog_content=get_changelog_content(),
                                     message="Conversion failed", error=True)
@@ -200,6 +210,7 @@ def convert():
             if not os.path.exists(output_path):
                 return render_template('index.html', 
                                     form_action=Config.get_form_action(),
+                                    static_url_prefix=Config.get_static_url_prefix(),
                                     app_version=get_version_display(),
                                     changelog_content=get_changelog_content(),
                                     message="Output file not created", error=True)
@@ -215,6 +226,7 @@ def convert():
     except Exception as e:
         return render_template('index.html', 
                             form_action=Config.get_form_action(),
+                            static_url_prefix=Config.get_static_url_prefix(),
                             app_version=get_version_display(),
                             changelog_content=get_changelog_content(),
                             message=f"Error: {str(e)}", error=True)

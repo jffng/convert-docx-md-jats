@@ -41,6 +41,14 @@ class Config:
             return "/convert"
     
     @staticmethod
+    def get_static_url_prefix():
+        """Get the appropriate static URL prefix based on environment."""
+        if Config.is_production():
+            return "/docx-converter/static"
+        else:
+            return "/static"
+    
+    @staticmethod
     def get_app_config():
         """Get Flask app configuration."""
         config = {
