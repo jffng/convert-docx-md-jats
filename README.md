@@ -215,6 +215,39 @@ Run the script with `--help` to see all available options:
 python convert-to-md.py --help
 ```
 
+## Versioning
+
+This project uses [Semantic Versioning](https://semver.org/) for version management.
+
+### Current Version
+The current version is displayed in the web interface and can be checked programmatically:
+
+```python
+from version import get_version, get_version_display
+print(get_version())        # "1.0.0"
+print(get_version_display()) # "v1.0.0"
+```
+
+### Version Management
+Use the included version manager script to handle version updates:
+
+```bash
+# Show current version
+python version_manager.py current
+
+# Bump version (major, minor, or patch)
+python version_manager.py bump patch
+
+# Set specific version
+python version_manager.py set 1.1.0
+
+# Update version and changelog
+python version_manager.py update 1.1.0 minor
+```
+
+### Changelog
+See [CHANGELOG.md](CHANGELOG.md) for a detailed history of changes.
+
 ## License
 
 This script is provided as-is for academic document conversion. It uses pandoc which is licensed under the GPL.
@@ -222,3 +255,8 @@ This script is provided as-is for academic document conversion. It uses pandoc w
 ## Contributing
 
 Feel free to modify the script for your specific needs. The code is well-documented and modular for easy customization.
+
+When contributing:
+1. Update the version using the version manager
+2. Add your changes to the CHANGELOG.md
+3. Follow semantic versioning principles

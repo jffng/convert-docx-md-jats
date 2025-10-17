@@ -7,6 +7,29 @@ from pathlib import Path
 from flask import Flask, request, send_file, render_template
 from werkzeug.middleware.proxy_fix import ProxyFix
 from config import Config
+from version import get_version, get_version_display
+
+def get_changelog_content():
+    """Read and return the changelog content for display."""
+    try:
+        changelog_path = Path("CHANGELOG.md")
+        if changelog_path.exists():
+            content = changelog_path.read_text(encoding='utf-8')
+            # Extract just the version entries (skip the header and metadata)
+            lines = content.split('\n')
+            start_index = 0
+            for i, line in enumerate(lines):
+                if line.startswith('## ['):
+                    start_index = i
+                    break
+            
+            # Get content from first version entry onwards
+            changelog_content = '\n'.join(lines[start_index:])
+            return changelog_content
+        return "Changelog not available"
+    except Exception as e:
+        logger.error(f"Error reading changelog: {str(e)}")
+        return "Error loading changelog"
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -74,7 +97,10 @@ def _run_conversion(cmd):
 @app.route('/')
 def index():
     """Handle requests to /docx-converter/"""
-    return render_template('index.html', form_action=Config.get_form_action())
+    return render_template('index.html', 
+                         form_action=Config.get_form_action(),
+                         app_version=get_version_display(),
+                         changelog_content=get_changelog_content())
 
 @app.route('/convert', methods=['POST'])
 def convert():
@@ -84,12 +110,16 @@ def convert():
         if 'document' not in request.files:
             return render_template('index.html', 
                                 form_action=Config.get_form_action(),
+                                app_version=get_version_display(),
+                                changelog_content=get_changelog_content(),
                                 message="No file uploaded", error=True)
 
         file = request.files['document']
         if file.filename == '':
             return render_template('index.html', 
                                 form_action=Config.get_form_action(),
+                                app_version=get_version_display(),
+                                changelog_content=get_changelog_content(),
                                 message="No file selected", error=True)
 
         # Determine conversion type based on file extension
@@ -109,6 +139,8 @@ def convert():
         else:
             return render_template('index.html', 
                                 form_action=Config.get_form_action(),
+                                app_version=get_version_display(),
+                                changelog_content=get_changelog_content(),
                                 message="Unsupported file type. Please upload a .docx or .md file.", error=True)
 
         # Create temporary directory for processing
@@ -153,17 +185,23 @@ def convert():
             else:
                 return render_template('index.html', 
                                     form_action=Config.get_form_action(),
+                                    app_version=get_version_display(),
+                                    changelog_content=get_changelog_content(),
                                     message="Invalid format selected", error=True)
 
             if not success:
                 return render_template('index.html', 
                                     form_action=Config.get_form_action(),
+                                    app_version=get_version_display(),
+                                    changelog_content=get_changelog_content(),
                                     message="Conversion failed", error=True)
 
             # Check if output file exists
             if not os.path.exists(output_path):
                 return render_template('index.html', 
                                     form_action=Config.get_form_action(),
+                                    app_version=get_version_display(),
+                                    changelog_content=get_changelog_content(),
                                     message="Output file not created", error=True)
 
             # Return the converted file
@@ -177,6 +215,8 @@ def convert():
     except Exception as e:
         return render_template('index.html', 
                             form_action=Config.get_form_action(),
+                            app_version=get_version_display(),
+                            changelog_content=get_changelog_content(),
                             message=f"Error: {str(e)}", error=True)
 
 if __name__ == '__main__':
