@@ -2,68 +2,331 @@
 <html>
 <head>
     <title>DOCX to JATS XML Converter</title>
+    <!-- Pure CSS Framework -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@3.0.0/build/grids-responsive-min.css">
     <style>
-        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
-        .form-group { margin-bottom: 15px; }
-        label { display: block; margin-bottom: 5px; font-weight: bold; }
-        input[type="file"], select { width: 100%; padding: 8px; margin-bottom: 10px; }
-        button { background: #007cba; color: white; padding: 10px 20px; border: none; cursor: pointer; }
-        button:hover { background: #005a87; }
-        .result { margin-top: 20px; padding: 15px; background: #f0f0f0; border-radius: 5px; }
-        .error { background: #ffebee; color: #c62828; }
-        .success { background: #e8f5e8; color: #2e7d32; }
-        .changelog { margin-top: 30px; }
-        .changelog-toggle { 
-            background: #f5f5f5; 
-            border: 1px solid #ddd; 
-            padding: 10px; 
-            cursor: pointer; 
-            border-radius: 5px;
-            margin-bottom: 10px;
+        /* Custom styles to enhance Pure CSS */
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
         }
-        .changelog-toggle:hover { background: #e8e8e8; }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        .header {
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #eee;
+        }
+        .version-info {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 0.5rem;
+        }
+        .form-container {
+            background: #fafafa;
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid #e1e1e1;
+            margin-bottom: 2rem;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-group label {
+            font-weight: 600;
+            color: #555;
+            margin-bottom: 0.5rem;
+        }
+        .result { 
+            margin-top: 1.5rem; 
+            padding: 1rem; 
+            border-radius: 6px;
+            border-left: 4px solid;
+        }
+        .error { 
+            background: #ffebee; 
+            color: #c62828; 
+            border-left-color: #c62828;
+        }
+        .success { 
+            background: #e8f5e8; 
+            color: #2e7d32; 
+            border-left-color: #2e7d32;
+        }
+        .changelog { 
+            margin-top: 2rem; 
+        }
+        .changelog-toggle { 
+            background: #f8f9fa; 
+            border: 1px solid #dee2e6; 
+            padding: 0.75rem 1rem; 
+            cursor: pointer; 
+            border-radius: 6px;
+            margin-bottom: 0.5rem;
+            transition: background-color 0.2s ease;
+            font-weight: 500;
+        }
+        .changelog-toggle:hover { 
+            background: #e9ecef; 
+        }
         .changelog-content { 
             display: none; 
-            background: #f9f9f9; 
-            border: 1px solid #ddd; 
-            padding: 15px; 
-            border-radius: 5px;
+            background: #f8f9fa; 
+            border: 1px solid #dee2e6; 
+            padding: 1.5rem; 
+            border-radius: 6px;
             max-height: 400px;
             overflow-y: auto;
-            font-family: monospace;
-            font-size: 0.9em;
+            font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+            font-size: 0.85em;
             white-space: pre-wrap;
+            line-height: 1.4;
         }
-        .changelog-content.show { display: block; }
+        .changelog-content.show { 
+            display: block; 
+        }
+        .conversion-info {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 0.5rem;
+            padding: 0.5rem;
+            background: #f0f8ff;
+            border-radius: 4px;
+            border-left: 3px solid #007cba;
+        }
+        /* Pure CSS overrides for better styling */
+        .pure-button-primary {
+            background-color: #007cba;
+            border-radius: 6px;
+            font-weight: 500;
+            padding: 0.75rem 1.5rem;
+        }
+        .pure-button-primary:hover {
+            background-color: #005a87;
+        }
+        .pure-form input[type="file"] {
+            border: 2px dashed #ddd;
+            border-radius: 6px;
+            padding: 1rem;
+            background: white;
+            transition: border-color 0.2s ease;
+        }
+        .pure-form input[type="file"]:hover {
+            border-color: #007cba;
+        }
+        .pure-checkbox {
+            margin: 0.5rem 0;
+        }
+        
+        /* Workflow Instructions Styling */
+        .workflow-container {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid #e1e1e1;
+            margin-bottom: 2rem;
+        }
+        .workflow-container h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        .workflow-steps {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .step {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #007cba;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .step-number {
+            background: #007cba;
+            color: white;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+        .step-content {
+            flex: 1;
+        }
+        .step-content h3 {
+            color: #2c3e50;
+            margin-bottom: 0.75rem;
+            font-size: 1.1rem;
+        }
+        .step-content ul {
+            margin: 0.5rem 0;
+            padding-left: 1.5rem;
+        }
+        .step-content li {
+            margin-bottom: 0.5rem;
+            line-height: 1.5;
+        }
+        .format-example {
+            background: #f0f8ff;
+            border: 1px solid #b3d9ff;
+            border-radius: 4px;
+            padding: 1rem;
+            margin: 0.75rem 0;
+            font-family:monospace;
+            line-height: 1.4;
+        }
+        .format-example strong {
+            font-weight: bold;
+        }
+        .format-example em {
+            font-style: italic;
+        }
+        .workflow-note {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 6px;
+            padding: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        .workflow-note h4 {
+            color: #856404;
+            margin-bottom: 0.75rem;
+        }
+        .workflow-note p {
+            color: #856404;
+            margin: 0;
+            line-height: 1.5;
+        }
+        
+        /* Responsive design for workflow */
+        @media (max-width: 768px) {
+            .step {
+                flex-direction: column;
+                text-align: center;
+            }
+            .step-number {
+                align-self: center;
+            }
+        }
     </style>
 </head>
 <body>
-    <h1>DOCX to Markdown and JATS XML Converter</h1>
-    {% if app_version %}
-    <p style="font-size: 0.9em; color: #666; margin-top: -10px;">
-        <strong>Version:</strong> {{ app_version }}
-    </p>
-    {% endif %}
-    <p>This is a small tool to help with the conversion of academic journal articles formatted  (DOCX) to Markdown and JATS XML.</p>
-    
-    <form action="{{ form_action }}" method="post" enctype="multipart/form-data">
-        <div class="form-group">
-            <label for="document">Select Document:</label>
-            <input type="file" id="document" name="document" accept=".docx,.md" required onchange="updateConversionOptions()">
-        </div>
-        
-        <div class="form-group" id="conversion-options" style="display: none;">
-            <div id="docx-options">
-                <label for="convert-to-jats">
-                    <input type="checkbox" id="convert-to-jats" name="convert-to-jats">
-                    Convert to JATS XML (for DOCX files only)
-                </label>
+    <div class="container">
+        <div class="header">
+            <h1>DOCX to Markdown and JATS XML Converter</h1>
+            <p><i>A tool to help with the conversion of academic journal articles formatted and created in Microsoft Word (DOCX) to Markdown and JATS XML — the expected format for rendering articles using Open Journal Systems (OJS).</i></p>
+            {% if app_version %}
+            <div class="version-info">
+                <strong>Version:</strong> {{ app_version }}
             </div>
-            <p id="conversion-info" style="font-size: 0.9em; color: #666; margin-top: 5px;"></p>
+            {% endif %}
         </div>
         
-        <button type="submit">Convert Document</button>
-    </form>
+        <div class="workflow-container">
+            <h2>📋 Workflow Instructions</h2>
+            <p>Follow these steps to prepare the finalized article to be attached as a galley to an issue in Open Journal Systems (OJS):</p>
+            
+            <div class="workflow-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Prepare the docx</h3>
+                        <ul>
+                            <li><strong>Remove</strong> title, abstract, and keywords from the document</li>
+                            <li><strong>Ensure figures are added directly</strong> to the document following this formatting:</li>
+                        </ul>
+                        <div class="format-example">
+                            <strong>Figure 1</strong><br>
+                            <img src="{{ url_for('static', filename='images/image1.jpg') }}" alt="Figure 1" style="max-width: 100%; height: auto;"><br>
+                            The <em>Huvi-matka Avasaksaan</em> game board features depictions of iconic Finnish locations by artist Hilda Olson. Several of the depictions were the first images of those places ever reproduced. (Image in the public domain)
+                        </div>
+
+                        <ul>
+                            <li><strong>Include tables</strong> with their titles and captions</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Convert to JATS XML</h3>
+                        <ul>
+                            <li>Upload your prepared DOCX file above</li>
+                            <li><strong>Check the "Convert to JATS XML" option</strong></li>
+                            <li>Click "Convert Document" to generate the XML file</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Rename Image Files</h3>
+                        <ul>
+                            <li>Rename your image files sequentially as they appear in the article:</li>
+                        </ul>
+                        <div class="format-example">
+                            image1.jpg, image2.png, image3.jpg, etc.
+                        </div>
+                        <ul>
+                            <li>Images must be renamed <strong>image1.[jpg|png], image2.[jpg|png], image3.[jpg|png]...</strong> in the order they appear in the article, otherwise the filepaths will be incorrect in the resulting XML file.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Upload to OJS</h3>
+                        <ul>
+                            <li>Upload the generated XML file as a galley to the issue in OJS.</li>
+                            <li>Upload the renamed images as dependent files to the XML galley.</li>
+                            <li>Preview the article in the OJS frontend to ensure the formatting is correct.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="workflow-note">
+                <h4>💡 Optional: Markdown Editing</h4>
+                <p>If you need additional formatting options, you can first convert to Markdown, edit the file, then convert to JATS XML. This gives you access to Markdown's formatting capabilities while maintaining the final XML output.</p>
+            </div>
+        </div>
+        
+        <div class="form-container">
+            <form class="pure-form pure-form-stacked" action="{{ form_action }}" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="document">Select Document:</label>
+                    <input type="file" id="document" name="document" accept=".docx,.md" required onchange="updateConversionOptions()">
+                </div>
+                
+                <div class="form-group" id="conversion-options" style="display: none;">
+                    <div id="docx-options">
+                        <label class="pure-checkbox" for="convert-to-jats">
+                            <input type="checkbox" id="convert-to-jats" name="convert-to-jats">
+                            Convert to JATS XML (for DOCX files only)
+                        </label>
+                    </div>
+                    <div id="conversion-info" class="conversion-info"></div>
+                </div>
+                
+                <button type="submit" class="pure-button pure-button-primary">Convert Document</button>
+            </form>
+        </div>
     
     <script>
     function updateConversionOptions() {
@@ -81,12 +344,12 @@
                 docxOptions.style.display = 'block';
                 convertToJats.disabled = false;
                 convertToJats.checked = false;
-                conversionInfo.textContent = 'Check the box to convert to JATS XML directly from DOCX. If unchecked, DOCX will be converted to Markdown.';
+                conversionInfo.innerHTML = '<strong>DOCX File Selected:</strong> Check the box to convert to JATS XML directly from DOCX. If unchecked, DOCX will be converted to Markdown.';
             } else if (fileName.endsWith('.md')) {
                 conversionOptions.style.display = 'block';
                 docxOptions.style.display = 'none';
                 convertToJats.checked = true;
-                conversionInfo.textContent = 'Markdown will be converted to JATS XML.';
+                conversionInfo.innerHTML = '<strong>Markdown File Selected:</strong> Markdown will be converted to JATS XML.';
             } else {
                 conversionOptions.style.display = 'none';
             }
@@ -127,5 +390,6 @@
         }
     }
     </script>
+    </div> <!-- End container -->
 </body>
 </html>

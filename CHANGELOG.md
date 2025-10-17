@@ -5,47 +5,27 @@ All notable changes to the DOCX to JATS XML Converter will be documented in this
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.0.0] - 2025-01-27
+## [1.1.0] - 2025-10-17
 
 ### Added
-- Initial release of the DOCX to JATS XML Converter web application
-- **DOCX to Markdown conversion** with academic formatting support
-  - Footnotes preservation using pandoc's footnote syntax
-  - Citation support for academic references
-  - Table formatting with multiline structure preservation
-  - Image handling with dimension removal
-  - Content structure preservation
-  - Formatting fixes for split bold segments
-  - Italics consolidation and underscore format conversion
-- **Markdown to JATS XML conversion** with full compliance
-  - JATS archiving XML format generation
-  - Figure parsing with proper JATS XML elements
-  - Section wrapping with unique ID generation
-  - Academic document hierarchy maintenance
-  - Cross-reference preservation
-- **Web interface** with Flask backend
-  - File upload functionality for .docx and .md files
-  - Conversion type selection (DOCX→Markdown, Markdown→JATS, DOCX→JATS)
-  - Real-time conversion options based on file type
-  - Error handling and user feedback
-  - File download functionality
-- **Production deployment support**
-  - Gunicorn WSGI server configuration
-  - Reverse proxy support with ProxyFix
-  - Logging with rotating file handlers
-  - Environment-based configuration
-  - Systemd service configuration
-- **Semantic versioning** implementation
-  - Version tracking with `version.py` module
-  - Version display in web interface
-  - Changelog documentation
+- Comprehensive workflow instructions for OJS article preparation
+- Step-by-step guide with visual indicators and formatting examples
+- Mobile-responsive design for workflow instructions
+- Pure CSS framework integration (3.7KB gzipped)
+
+## [1.0.0] - 2025-09-18
+
+### Added
+- Initial release of DOCX to JATS XML Converter web application
+- DOCX to Markdown conversion with academic formatting support
+- Markdown to JATS XML conversion with full JATS compliance
+- Web interface with Flask backend
+- Production deployment support with Gunicorn
+- Semantic versioning implementation
 
 ### Technical Details
 - Built with Python 3.12+ and Flask 2.0+
 - Uses pandoc for high-quality document conversion
-- Supports academic publishing standards
-- Modular architecture with separate converter modules
-- Comprehensive error handling and logging
 - Cross-platform compatibility (macOS, Linux, Windows)
 
 ### Dependencies
@@ -60,7 +40,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 | Version | Date | Description |
 |---------|------|-------------|
-| 1.0.0 | 2025-01-27 | Initial release with full DOCX/Markdown/JATS conversion capabilities |
+| 1.1.0 | 2025-10-17 | Added workflow instructions and enhanced UI |
+| 1.0.0 | 2025-09-18 | Initial release with full conversion capabilities |
 
 ## Semantic Versioning
 
