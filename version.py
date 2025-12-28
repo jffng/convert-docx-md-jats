@@ -2,8 +2,8 @@
 Version information for the DOCX to JATS XML Converter application.
 """
 
-__version__ = "1.1.0"
-__version_info__ = (1, 1, 0)
+__version__ = "1.2.0"
+__version_info__ = (1, 2, 0)
 
 def get_version():
     """Return the current version string."""

@@ -322,16 +322,74 @@ def parse_figures_for_jats(content: str) -> str:
     return content
 
 
+def flatten_table_blockquotes(content: str) -> str:
+    """
+    Flatten complex table cell structures to simple, OJS-compatible format.
+
+    This addresses issues where Pandoc converts blockquotes (>) within markdown table
+    cells to <disp-quote> elements or creates multiple <p> elements, which don't render
+    properly in OJS. We simplify to a single paragraph with line breaks.
+
+    Args:
+        content: The JATS XML content to process
+
+    Returns:
+        The content with table cells simplified for OJS compatibility
+    """
+    # Pattern to match table cells
+    td_pattern = r'<td([^>]*)>(.*?)</td>'
+
+    def process_table_cell(match):
+        td_attrs = match.group(1)
+        td_content = match.group(2).strip()
+
+        # If cell is empty or has no paragraph tags, return as-is
+        if not td_content or '<p>' not in td_content:
+            return match.group(0)
+
+        # Step 1: Remove disp-quote and wrapper paragraphs
+        # Pattern: <p specific-use="wrapper"><disp-quote>...</disp-quote></p>
+        wrapper_pattern = r'<p\s+specific-use="wrapper"\s*>\s*<disp-quote>(.*?)</disp-quote>\s*</p>'
+        td_content = re.sub(wrapper_pattern, r'\1', td_content, flags=re.DOTALL)
+
+        # Step 2: Extract all paragraph contents
+        p_pattern = r'<p>(.*?)</p>'
+        paragraphs = re.findall(p_pattern, td_content, flags=re.DOTALL)
+
+        if not paragraphs:
+            return match.group(0)
+
+        # Step 3: Join paragraphs with semicolon separators
+        # OJS sanitizes out all break elements (<p>, <break/>, <br/>) and line break characters
+        # from table cells. Use semicolons to separate citations for readability.
+        combined_content = paragraphs[0].strip()
+        for para in paragraphs[1:]:
+            para_stripped = para.strip()
+            if para_stripped:
+                # Add semicolon separator for readability
+                combined_content += f'; {para_stripped}'
+
+        # Don't wrap in <p> - OJS needs direct content in table cells
+        processed_td_content = combined_content
+
+        return f'<td{td_attrs}>{processed_td_content}</td>'
+
+    # Apply the table cell processing to all table cells
+    content = re.sub(td_pattern, process_table_cell, content, flags=re.DOTALL)
+
+    return content
+
+
 def wrap_body_content_in_sections(content: str) -> str:
     """
     Ensure all content within the <body> tag is wrapped in <sec> tags.
-    
+
     This function looks for content directly inside the <body> tag that is not already
     wrapped in <sec> tags and wraps it appropriately. Each section gets a unique ID.
-    
+
     Args:
         content: The JATS XML content to process
-        
+
     Returns:
         The content with body content properly wrapped in sec tags with unique IDs
     """
@@ -554,13 +612,16 @@ def convert_markdown_to_xml(input_file: str, output_file: str) -> bool:
         if os.path.exists(output_file):
             with open(output_file, 'r', encoding='utf-8') as f:
                 content = f.read()
-            
+
             # Parse and convert figure patterns to proper JATS XML
             content = parse_figures_for_jats(content)
-            
+
+            # Flatten blockquotes in table cells to styled-content elements
+            content = flatten_table_blockquotes(content)
+
             # Wrap body content in sections
             content = wrap_body_content_in_sections(content)
-            
+
             # Write the processed content back
             with open(output_file, 'w', encoding='utf-8') as f:
                 f.write(content)
